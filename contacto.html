@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header id="main_header">
+        <h1>Desarrollo web</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" target="_self">Inicio</a></li>
+                <li><a href="documentacion.html" target="_self">Documentación</a></li>
+                <li><a href="contacto.html" target="_self">Contacto</a></li>
+            </ul>
+        </nav>
+    </header> 
+    <section id="main-content">
+        <article>
+            <h2>Contactame</h2>
+            <p>Tienes alguna o suguerencia, puedes escribirla en este apartado y de la manera más rapida y atenta
+                me pondre en contacto.
+            </p>
+            <form action="https://formsubmit.co/blink12866@hotmail.com" method="POST"> <!-- En el formulario, indicamos que se va a realizar y a donde lo va a mandar
+            con el metodo post, ya que este es para mandar información a otros sitios-->
+                <br>
+                <Label>Nombre: 
+                    <input type="text" name="name" required>    <!-- Declaración del dato de entrada nombre-->
+                </Label><br>
+                <label>Email: 
+                    <input type="email" name="email" required>    <!-- Declaración del dato de entrada email-->
+                </label><br>
+                <label for="message">Mensaje: 
+                    <input type="text" name="message" required> <!-- Declaración del dato de entrada mensaje, lo que se va a mandar-->
+                </label><br>
+                <button type="submit">Enviar</button> <!-- El boton con el cual daremos la indicación para que se mande la información-->
+                <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html"> <!-- como se trata de un serivicio externo
+                por default muestra la pantalla de que el correo a sido enviado, y solo se queda en esa pagina, para que nos redireccione de nuevo a
+                nuestro sitio, se usa este metodo que redirecciona a la pagina de contacto-->
+           </form>
+        </article>
+    </section>  
+    <footer><!-- Declaración del pie de pagina, dentro de el hay un div con la clase container, que nos servira para aplicar de manera
+        directa un estilo de css-->
+        <div class="container">
+          <p>2023. Ismael Hernandez Gutierrez 197O00556     Instituto Tecnologico Superior de Xalapa</p>
+        </div>
+      </footer>
+</body>
+</html>

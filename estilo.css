@@ -1,0 +1,142 @@
+  body {
+    background-color: #F0E5D8; /* Se declara el color del fondo del documento*/
+  }
+  header {
+    background-color: #B4D7D2; /* Se declara el color del fondo del header*/
+    color: #000000; /* Color de la letra del header */
+    border: 2px solid #E6B8A2; /* Tamaño y tipo de borde del header, como tambien el color del borde */
+    padding: 20px; /* Espacio entre el borde y el contenido*/
+  }
+  
+  h1 {
+    margin: 0; /* Espacio entre elementos*/
+    text-align: center; /* Dirección del texto */
+    font-family: Arial, Helvetica, sans-serif; /* Fuente a utilizar*/
+  }
+  
+  nav ul {
+    list-style: none; /* Tipo de biñeta */
+    padding: 0; 
+    margin: 0;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  nav ul li {
+    display: inline; /* Como se muetra el elemento en la página*/
+    margin-right: 10px; /* Espacio entre el borde derecho y elementos adyacentes */
+  }
+  
+  nav ul li a {
+    color: #000000;
+    text-decoration: none; /* Decorado de texto, en este caso, ninguno*/
+  }
+
+  p {
+    font-size: 16px; /* Tamaño de la letra */
+    line-height: 1.5; /* Distancia entre los elementos que esten en linea verticalmente*/
+    margin-bottom: 10px; /* Margen inferior del elemento*/
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  h2 {
+    font-size: 24px;
+    font-weight: bold; /* Grosor del texto, en este caso, negritas*/
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  article {
+    border: 2px solid #E6B8A2;
+    background-color: #B4D7D2;
+    padding: 20px;
+    border-radius: 5px; /* Aplica bordes redondeados */
+    margin-bottom: 20px;
+  }
+  #info-content{
+    display: flex; /* Se muestra el contenido en contenedores*/
+    align-items: stretch; /* Como se acomoda los contenedores*/
+  }
+  #example-content{
+    display: flex;
+    align-items: stretch;
+  }
+  #exampleone-content{
+    display: flex;
+    align-items: stretch;
+  }
+  #exampletwo-content{
+    display: flex;
+    align-items: stretch;
+  }
+
+  form {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #docu-content{
+    display: flex;
+  }
+
+  input[type="text"],
+  input[type="email"]
+  {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+
+  form button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333333;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  img {
+    width: 200px; 
+    height: auto; /* Altura de la imagen, queda por defecto*/
+    border: 1px solid #CCCCCC; 
+    border-radius: 5px; 
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Se aplica sobra al contorno de la imagen*/
+    margin: 10px; 
+    padding: 5px; 
+  }
+
+  footer {
+    background-color: #B4D7D2;
+    color: #000000;
+    padding: 20px;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+  }

@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header id="main_header"> <!-- Este es el header donde se encuentra el titulo -->
+        <h1>Desarrollo web</h1> 
+        <nav> <!-- Lista de navegación para los enlaces a las pagínas principales del blog-->
+            <ul> <!-- Declaración de elementos de para la lista los diferentes enlaces-->
+                <li><a href="index.html" target="_self">Inicio</a></li>  <!-- Redirigue al index-->
+                <li><a href="documentacion.html" target="_self">Documentación</a></li> <!-- Redirigue a la pagína documentación -->
+                <li><a href="contacto.html" target="_self">Contacto</a></li> <!-- Redirigue a la pagína contacto -->
+            </ul>
+        </nav>
+    </header>
+    <section id="main-content"> <!-- Se declara una sección, en este caso se coloca id para identificarlo y poder añadir estilos directamente a este mismo-->
+        <article> <!-- Se declara un articulo, en el cual se encuentra infomación general de que se trata el blog -->
+            <h2>Principios fundamentales para el desarrollo web</h2>
+            <p>El desarrollo web se refiere al proceso de crear, construir y mantener sitios web y aplicaciones web. 
+                Implica la utilización de diferentes tecnologías, lenguajes de programación y herramientas para diseñar y desarrollar sitios web interactivos y funcionales. 
+                El desarrollo web abarca varias etapas, desde la planificación y el diseño inicial del sitio web hasta la implementación y el mantenimiento continuo.
+                Los desarrolladores web utilizan lenguajes de programación como HTML, CSS y JavaScript para crear la estructura,
+                el diseño y la funcionalidad de un sitio web. También pueden utilizar frameworks y bibliotecas populares como Bootstrap, React y Angular 
+                para acelerar el proceso de desarrollo y agregar características avanzadas.
+                El desarrollo web implica también la gestión de bases de datos, donde la información del sitio web se almacena y se recupera según sea necesario. 
+                Esto se realiza a través de sistemas de gestión de bases de datos como MySQL o PostgreSQL.
+            </p>
+            <p>
+                Como tal, en este sitio, te hablaremos solo de los lenguajes de programación necesarios para empezar en el desarrollo web, 
+                como lo son HTML, CSS y JavaScript. Para ello se utilzaran diversos ejemplos que tienen como proposito de como utilizar cada lenguaje 
+                como tambien, con sus respectivos elementos y sintaxis que cada uno de ellos necesita para su correcto funcionamiento.
+            </p>
+        </article> <!-- cierre del articulo -->
+    </section> <!-- cierre de la sección -->
+    <section id="info-content"> <!-- Declaración de otra sección, donde se alojan definiciones generales de lo que se trata el blog -->
+        <article>
+            <h3>HTML</h3>
+            <p>HTML (HyperText Markup Language) es el lenguaje de marcado estándar utilizado para crear la estructura y el contenido de las páginas web. 
+                Es el lenguaje fundamental en el desarrollo web y proporciona las bases para la creación de sitios web interactivos. En HTML, los elementos y etiquetas 
+                se utilizan para definir y organizar diferentes partes de una página web, como encabezados, párrafos, imágenes, enlaces, formularios y mucho más. 
+                Cada etiqueta tiene un propósito específico y se utiliza para representar un tipo particular de contenido.
+                HTML utiliza una estructura jerárquica en forma de árbol, donde los elementos se anidan unos dentro de otros. 
+                Esto permite una representación estructurada y semántica del contenido de la página web, lo que es beneficioso tanto para los 
+                desarrolladores como para los motores de búsqueda.
+                Además de definir la estructura del contenido, HTML también permite la inclusión de enlaces a otros recursos, 
+                como hojas de estilo CSS para el diseño y presentación visual, scripts JavaScript para agregar interactividad y funcionalidad dinámica, 
+                y otros recursos multimedia, como imágenes y videos.
+            </p>
+        </article>
+        <article> 
+            <h3>CSS</h3>
+            <p>
+            CSS (Cascading Style Sheets) es un lenguaje utilizado para describir el aspecto y la presentación visual de un documento HTML o XML. 
+            Se utiliza para definir cómo se ven los elementos y el diseño de una página web.
+            Con CSS, se pueden establecer propiedades como el color, el tamaño, la fuente, el espaciado y la disposición de los elementos en una página web. 
+            Esto permite separar el contenido estructural del diseño visual, lo que brinda flexibilidad y mantenibilidad en el desarrollo web.
+            Las reglas de estilo de CSS se aplican a los elementos HTML utilizando selectores. 
+            Los selectores identifican qué elementos serán afectados por las reglas y cómo se les aplicarán los estilos. 
+            Esto permite una gran precisión en la personalización del diseño de una página web.
+            Además de las propiedades de estilo básicas, CSS también ofrece características avanzadas como las transiciones, 
+            animaciones y transformaciones, que permiten agregar interactividad y efectos visuales a una página web.
+            CSS se utiliza en conjunto con HTML y JavaScript para crear páginas web atractivas e interactivas. Al separar la presentación del 
+            contenido, CSS facilita la adaptabilidad de un sitio web a diferentes dispositivos y tamaños de pantalla a través de técnicas de diseño responsivo.
+            </p>
+        </article>
+        <article>
+            <h3>JavaScript</h3>
+            <p>
+            JavaScript es un lenguaje de programación de alto nivel, interpretado y orientado a objetos. Es ampliamente 
+            utilizado en el desarrollo web para agregar interactividad y funcionalidad dinámica a las páginas web.
+            JavaScript se ejecuta en el lado del cliente, lo que significa que se ejecuta en el navegador web del usuario final. 
+            Permite la manipulación de elementos HTML, la gestión de eventos, el acceso a API del navegador y la comunicación con servidores.
+            Con JavaScript, se pueden realizar diversas tareas, como validar formularios, crear efectos visuales, actualizar el contenido 
+            de una página sin tener que recargarla completamente (gracias a AJAX), crear animaciones, implementar lógica de negocio y mucho más.
+            El lenguaje JavaScript tiene una sintaxis similar a otros lenguajes de programación como C++ o Java, lo que facilita su aprendizaje y uso. 
+            Además, cuenta con una amplia cantidad de bibliotecas y frameworks populares, 
+            como React, Angular y Vue.js, que simplifican el desarrollo de aplicaciones web complejas.
+            JavaScript también se ha expandido más allá del desarrollo web y se utiliza en otros entornos, como el desarrollo de aplicaciones móviles 
+            (usando frameworks como React Native o Ionic) y el desarrollo de servidores (usando Node.js).
+            </p>
+        </article>
+    </section>
+    <section id="instruc-content"> <!-- Declaración de información general para poder observa los ejemplos y ejercicios que se van a realizar -->
+        <article>
+            <h3>Introducción</h3>
+            <p>Todo el contenido que se encuentra en este sitio web, esta diseñado para observar y comprender como es que se realiza
+                contenido para pagínas web, para ello, se utiliza el libro de referencia "Internet and World Wide Web How to Program", de la editorial,
+                Deital.
+                Además, para una mayor información, se puede acceder al aparatado de Documentación, donde se especifica un poco más del contenido.
+            </p>
+            <h2>Instrucciones</h2>
+            <p>
+                Para poder ver como esta desarrollado cada ejercicio, se necesitara de la herramienta de nuestro navegador "Ver codigo fuente de la página". Para 
+                ello podemos acceder ya sea <strong>ctrl+u</strong> o en su defecto podremos acceder dando clic derecho en alguna parte de la página y seleccionar la 
+                opción de "Ver codigo fuente de la página". 
+            </p>
+        </article>
+    </section>
+    <section id="example-content"> <!-- En esta sección se encuentran alojados los diferentes links que llevan a 
+    cada ejemplo y ejercicio del capitulo del libro, cada sección abarca un total de 4 capitulos, por cuestiones de diseño -->
+        <article>
+            <hr>
+            <h1>Capitulo 2: Introducci&oacute;n a HTML5: parte 1</h1>
+            <hr>
+            <section></section>
+            <p>Ejemplos en el capitulo</p>
+            <ul>
+                <li><a href = "Capitulo2/Ejemplos/Fig. 2.1.html" target = "_self">
+                    <strong>Figura 2.1</strong> </a></li>
+                <li><a href = "Capitulo2/Ejemplos/Fig. 2.2.html" target = "_self">
+                    <strong>Figura 2.2</strong> </a></li>
+                <li><a href = "Capitulo2/Ejemplos/Fig. 2.3.html" target = "_self">
+                    <strong>Figura 2.3</strong> </a></li>
+                <li><a href = "Capitulo2/Ejemplos/Fig. 2.4.html" target = "_self">
+                    <strong>Figura 2.4</strong></a></li>
+                <li><a href = "Capitulo2/Ejemplos/Fig. 2.6.html" target = "_self">
+                    <strong>Figura 2.6</strong> </a></li>
+                <li><a href = "Capitulo2/Ejemplos/Fig. 2.7.html" target = "_self">
+                    <strong>Figura 2.7</strong> </a></li>
+                <li><a href = "Capitulo2/Ejemplos/Fig. 2.9.html" target = "_self">
+                    <strong>Figura 2.9</strong> </a></li>
+                <li><a href = "Capitulo2/Ejemplos/Fig. 2.10.html" target = "_self">
+                    <strong>Figura 2.10</strong> </a></li>
+                <li><a href = "Capitulo2/Ejemplos/Fig. 2.11.html" target = "_self">
+                    <strong>Figura 2.11</strong> </a></li>
+                <li><a href = "Capitulo2/Ejemplos/Fig. 2.12.html" target = "_self">
+                    <strong>Figura 2.12</strong> </a></li>
+                <li><a href = "Capitulo2/Ejemplos/Fig. 2.13.html" target = "_self">
+                    <strong>Figura 2.13</strong> </a></li>
+                <li><a href = "Capitulo2/Ejemplos/Fig. 2.14.html" target = "_self">
+                    <strong>Figura 2.14</strong> </a></li>
+                <li><a href = "Capitulo2/Ejemplos/Fig. 2.15.html" target = "_self">
+                    <strong>Figura 2.15</strong> </a></li>
+                <li><a href = "Capitulo2/Ejemplos/Fig. 2.16.html" target = "_self">
+                    <strong>Figura 2.16</strong> </a></li>
+                <li><a href = "Capitulo2/Ejemplos/Fig. 2.17.html" target = "_self">
+                    <strong>Figura 2.17</strong> </a></li>
+            </ul>
+            <hr>
+            <p>Ejercicios de autoevaluaci&oacute;n</p>
+            
+            <ul>
+                <li><a href = "Capitulo2/Ejercicios/Ejercicio2.1.html" target = "_self">
+                    <strong>2.1</strong></a></li>
+                <li><a href = "Capitulo2/Ejercicios/Ejercicio2.2.html" target = "_self">
+                    <strong>2.2</strong></a></li>
+            </ul>
+            
+            <p>Ejercicios</p>
+            
+            <ul>
+                <li><a href = "Capitulo2/Ejercicios/Ejercicio2.3.html" target = "_self">
+                    <strong>2.3</strong></a></li>
+                <li><a href = "Capitulo2/Ejercicios/Ejercicio2.4.html" target = "_self">
+                    <strong>2.4</strong></a></li>
+                <li><a href = "Capitulo2/Ejercicios/Ejercicio2.5.html" target = "_self">
+                    <strong>2.5</strong></a></li>
+                <li><a href = "Capitulo2/Ejercicios/Ejercicio2.6.html" target = "_self">
+                    <strong>2.6</strong></a></li>
+                <li><a href = "Capitulo2/Ejercicios/Ejercicio2.7.html" target = "_self">
+                    <strong>2.7</strong></a></li>
+                <li><a href = "Capitulo2/Ejercicios/Ejercicio2.8.html" target = "_self">
+                    <strong>2.8</strong></a></li>
+                <li><a href = "Capitulo2/Ejercicios/Ejercicio2.9.html" target = "_self">
+                    <strong>2.9</strong></a></li>
+                <li><a href = "Capitulo2/Ejercicios/Ejercicio2.10.html" target = "_self">
+                    <strong>2.10</strong></a></li>
+                <li><a href = "Capitulo2/Ejercicios/Ejercicio2.11.html" target = "_self">
+                    <strong>2.11</strong></a></li>
+                <li><a href = "Capitulo2/Ejercicios/Ejercicio2.12.html" target = "_self">
+                    <strong>2.12</strong></a></li>
+                <li><a href = "Capitulo2/Ejercicios/Ejercicio2.13.html" target = "_self">
+                    <strong>2.13</strong></a></li>
+                <li><a href = "Capitulo2/Ejercicios/Ejercicio2.14.html" target = "_self">
+                    <strong>2.14</strong></a></li>
+                <li><a href = "Capitulo2/Ejercicios/Ejercicio2.15.html" target = "_self">
+                    <strong>2.15</strong></a></li>
+                <li><a href = "Capitulo2/Ejercicios/Ejercicio2.16.html" target = "_self">
+                    <strong>2.16</strong></a></li>
+                <li><a href = "Capitulo2/Ejercicios/Ejercicio2.17.html" target = "_self">
+                    <strong>2.17</strong></a></li>
+            </ul>
+        </article>
+        <article>
+            <hr>
+            <h1>Capitulo 3: Introducci&oacute;n a HTML5: parte 2</h1>
+            <hr>
+            <p>Ejemplos en el capitulo</p>
+            <ul>
+                <li><a href = "Capitulo3/Ejemplos/Fig. 3.1.html" target = "_self">
+                    <strong>Figura 3.1</strong> </a></li>
+                <li><a href = "Capitulo3/Ejemplos/Fig. 3.17.html" target = "_self">
+                    <strong>Figura 3.17</strong> </a></li>
+                <li><a href = "Capitulo3/Ejemplos/Fig. 3.18.html" target = "_self">
+                    <strong>Figura 3.18</strong> </a></li>
+                
+            </ul>
+            <hr>
+            <p>Ejercicios de autoevaluaci&oacute;n</p>
+            
+            <ul>
+                <li><a href = "Capitulo3/Ejercicios/Ejercicio3.1.html" target = "_self">
+                    <strong>3.1</strong></a></li>
+                <li><a href = "Capitulo3/Ejercicios/Ejercicio3.2.html" target = "_self">
+                    <strong>3.2</strong></a></li>
+            </ul>
+            
+            <p>Ejercicios</p>
+            
+            <ul>
+                <li><a href = "Capitulo3/Ejercicios/Ejercicio3.3.html" target = "_self">
+                    <strong>3.3</strong></a></li>
+                <li><a href = "Capitulo3/Ejercicios/Ejercicio3.4.html" target = "_self">
+                    <strong>3.4</strong></a></li>
+                <li><a href = "Capitulo3/Ejercicios/Ejercicio3.5.html" target = "_self">
+                    <strong>3.5</strong></a></li>
+                <li><a href = "Capitulo3/Ejercicios/Ejercicio3.6.html" target = "_self">
+                    <strong>3.6</strong></a></li>
+                <li><a href = "Capitulo3/Ejercicios/Ejercicio3.7.html" target = "_self">
+                    <strong>3.7</strong></a></li>
+                <li><a href = "Capitulo3/Ejercicios/Ejercicio3.8.html" target = "_self">
+                    <strong>3.8</strong></a></li>
+                <li><a href = "Capitulo3/Ejercicios/Ejercicio3.9.html" target = "_self">
+                    <strong>3.9</strong></a></li>
+                <li><a href = "Capitulo3/Ejercicios/Ejercicio3.10.html" target = "_self">
+                    <strong>3.10</strong></a></li>
+                <li><a href = "Capitulo3/Ejercicios/Ejercicio3.11.html" target = "_self">
+                    <strong>3.11</strong></a></li>
+            </ul>
+        </article>
+        <article>
+            <hr>
+            <h1>Capitulo 4: Introducci&oacute;n a las hojas estilo cascada (Cascading Style Sheets<sup>TM</sup>, CSS): parte 1</h1>
+            <hr>
+            <p>Ejemplos en el capitulo</p>
+            <ul>
+                <li><a href = "Capitulo4/Ejemplos/Figura4.1.html" target = "_self">
+                    <strong>Figura 4.1</strong>.</a></li>
+                <li><a href = "Capitulo4/Ejemplos/Figura4.3.html" target = "_self">
+                    <strong>Figura 4.3</strong>.</a></li>
+                <li><a href = "Capitulo4/Ejemplos/Figura4.6.html" target = "_self">
+                    <strong>Figura 4.6</strong>.</a></li>
+                <li><a href = "Capitulo4/Ejemplos/Figura4.8.html" target = "_self">
+                    <strong>Figura 4.8</strong>.</a></li>
+                <li><a href = "Capitulo4/Ejemplos/Figura4.9.html" target = "_self">
+                    <strong>Figura 4.9</strong>.</a></li>
+                <li><a href = "Capitulo4/Ejemplos/Figura4.10.html" target = "_self">
+                    <strong>Figura 4.10</strong>.</a></li>
+                <li><a href = "Capitulo4/Ejemplos/Figura4.11.html" target = "_self">
+                    <strong>Figura 4.11</strong>.</a></li>
+                <li><a href = "Capitulo4/Ejemplos/Figura4.12.html" target = "_self">
+                    <strong>Figura 4.12</strong>.</a></li>
+                <li><a href = "Capitulo4/Ejemplos/Figura4.14.html" target = "_self">
+                    <strong>Figura 4.14</strong>.</a></li>
+                <li><a href = "Capitulo4/Ejemplos/Figura4.15.html" target = "_self">
+                    <strong>Figura 4.15</strong>.</a></li>
+                <li><a href = "Capitulo4/Ejemplos/Figura4.16.html" target = "_self">
+                    <strong>Figura 4.16</strong> .</a></li>
+                <li><a href = "Capitulo4/Ejemplos/Figura4.17.html" target = "_self">
+                    <strong>Figura 4.17</strong>.</a></li>
+                <li><a href = "Capitulo4/Ejemplos/Figura4.18.html" target = "_self">
+                    <strong>Figura 4.18</strong>.</a></li>
+                <li><a href = "Capitulo4/Ejemplos/Figura4.22.html" target = "_self">
+                    <strong>Figura 4.22</strong>.</a></li>
+            </ul>
+            <hr>
+            <p>Ejercicios de autoevaluaci&oacute;n</p>
+            
+            <ul>
+                <li><a href = "Capitulo4/Ejercicios/Ejercicio4.1.html" target = "_self">
+                    <strong>Ejercicio 4.1</strong>.</a></li>
+                <li><a href = "Capitulo4/Ejercicios/Ejercicio4.2.html" target = "_self">
+                    <strong>Ejercicio 4.2</strong>.</a></li>
+            </ul>
+            
+            <p>Ejercicios</p>
+            
+            <ul>
+                <li><a href = "Capitulo4/Ejercicios/Ejercicio4.3.html" target = "_self">
+                    <strong>Ejercicio 4.3</strong>.</a></li>
+                <li><a href = "Capitulo4/Ejercicios/Ejercicio4.4.html" target = "_self">
+                    <strong>Ejercicio 4.4</strong>.</a></li>
+                <li><a href = "Capitulo4/Ejercicios/Ejercicio4.5.html" target = "_self">
+                    <strong>Ejercicio 4.5</strong>.</a></li>
+                <li><a href = "Capitulo4/Ejercicios/Ejercicio4.6.html" target = "_self">
+                    <strong>Ejercicio 4.6</strong>.</a></li>
+                <li><a href = "Capitulo4/Ejercicios/Ejercicio4.7.html" target = "_self">
+                    <strong>Ejercicio 4.7</strong>.</a></li>
+                <li><a href = "Capitulo4/Ejercicios/Ejercicio4.8.html" target = "_self">
+                    <strong>Ejercicio 4.8</strong>.</a></li>
+                <li><a href = "Capitulo4/Ejercicios/Ejercicio4.9.html" target = "_self">
+                    <strong>Ejercicio 4.9</strong>.</a></li>
+            </ul>
+        </article>
+        
+        <article>
+            <hr>
+            <h1>Capitulo 5: Introducci&oacute;n a las hojas estilo cascada (Cascading Style Sheets<sup>TM</sup>, CSS): parte 2</h1>
+            <hr>
+            <p>Ejemplos en el capitulo</p>
+            <ul>
+                <li><a href = "Capitulo5/Ejemplo/Figura5.1.html" target = "_self">
+                    <strong>Figura 5.1</strong>.</a></li>
+                <li><a href = "Capitulo5/Ejemplo/Figura5.2.html" target = "_self">
+                    <strong>Figura 5.2</strong>.</a></li>
+                <li><a href = "Capitulo5/Ejemplo/Figura5.3.html" target = "_self">
+                    <strong>Figura 5.3</strong>.</a></li>
+                <li><a href = "Capitulo5/Ejemplo/Figura5.4.html" target = "_self">
+                    <strong>Figura 5.4</strong>.</a></li>
+                <li><a href = "Capitulo5/Ejemplo/Figura5.6.html" target = "_self">
+                    <strong>Figura 5.6</strong>.</a></li>
+                <li><a href = "Capitulo5/Ejemplo/Figura5.7.html" target = "_self">
+                    <strong>Figura 5.7</strong>.</a></li>
+                <li><a href = "Capitulo5/Ejemplo/Figura5.8.html" target = "_self">
+                    <strong>Figura 5.8</strong>.</a></li>
+                <li><a href = "Capitulo5/Ejemplo/Figura5.9.html" target = "_self">
+                    <strong>Figura 5.9</strong>.</a></li>
+                <li><a href = "Capitulo5/Ejemplo/Figura5.10.html" target = "_self">
+                    <strong>Figura 5.10</strong>.</a></li>
+                <li><a href = "Capitulo5/Ejemplo/Figura5.11.html" target = "_self">
+                    <strong>Figura 5.11</strong>.</a></li>
+                <li><a href = "Capitulo5/Ejemplo/Figura5.12.html" target = "_self">
+                    <strong>Figura 5.12</strong>.</a></li>
+                <li><a href = "Capitulo5/Ejemplo/Figura5.13.html" target = "_self">
+                    <strong>Figura 5.13</strong>.</a></li>
+                <li><a href = "Capitulo5/Ejemplo/Figura5.14.html" target = "_self">
+                    <strong>Figura 5.14</strong>.</a></li>
+                <li><a href = "Capitulo5/Ejemplo/Figura5.15.html" target = "_self">
+                    <strong>Figura 5.15</strong>.</a></li>
+                <li><a href = "Capitulo5/Ejemplo/Figura5.16.html" target = "_self">
+                    <strong>Figura 5.16</strong>.</a></li>
+                <li><a href = "Capitulo5/Ejemplo/Figura5.17.html" target = "_self">
+                    <strong>Figura 5.17</strong>.</a></li>
+                <li><a href = "Capitulo5/Ejemplo/Figura5.18.html" target = "_self">
+                    <strong>Figura 5.18</strong>.</a></li>         
+            </ul>
+            <hr>
+            <p>Ejercicios de autoevaluaci&oacute;n</p>
+            
+            <ul>
+                <li><a href = "Capitulo5/Ejercicios/Ejercicio5.1.html" target = "_self">
+                    <strong>5.1</strong></a></li>
+                <li><a href = "Capitulo5/Ejercicios/Ejercicio5.2.html" target = "_self">
+                    <strong>5.2</strong></a></li>
+            </ul>
+            
+            <p>Ejercicios</p>
+            
+            <ul>
+                <li><a href = "Capitulo5/Ejercicios/Ejercicio5.3.html" target = "_self">
+                    <strong>5.3</strong></a></li>
+                <li><a href = "Capitulo5/Ejercicios/Ejercicio5.4.html" target = "_self">
+                    <strong>5.4</strong></a></li>
+                <li><a href = "Capitulo5/Ejercicios/Ejercicio5.5.html" target = "_self">
+                    <strong>5.5</strong></a></li>
+                <li><a href = "Capitulo5/Ejercicios/Ejercicio5.6.html" target = "_self">
+                    <strong>5.6</strong></a></li>
+                <li><a href = "Capitulo5/Ejercicios/Ejercicio5.7.html" target = "_self">
+                    <strong>5.7</strong></a></li>
+                <li><a href = "Capitulo5/Ejercicios/Ejercicio5.8.html" target = "_self">
+                    <strong>5.8</strong></a></li>
+                <li><a href = "Capitulo5/Ejercicios/Ejercicio5.9.html" target = "_self">
+                    <strong>5.9</strong></a></li>
+                <li><a href = "Capitulo5/Ejercicios/Ejercicio5.10.html" target = "_self">
+                    <strong>5.10</strong></a></li>
+                <li><a href = "Capitulo5/Ejercicios/Ejercicio5.11.html" target = "_self">
+                    <strong>5.11</strong></a></li>
+                <li><a href = "Capitulo5/Ejercicios/Ejercicio5.12.html" target = "_self">
+                    <strong>5.12</strong></a></li>
+                <li><a href = "Capitulo5/Ejercicios/Ejercicio5.13.html" target = "_self">
+                    <strong>5.13</strong></a></li>
+                <li><a href = "Capitulo5/Ejercicios/Ejercicio5.14.html" target = "_self">
+                    <strong>5.14</strong></a></li>
+                <li><a href = "Capitulo5/Ejercicios/Ejercicio5.15.html" target = "_self">
+                    <strong>5.15</strong></a></li>
+                <li><a href = "Capitulo5/Ejercicios/Ejercicio5.16.html" target = "_self">
+                    <strong>5.16</strong></a></li>
+            </ul>
+        </article>
+        </section> <!-- Fin de la primera sección-->
+        <section id="exampleone-content"> <!-- Inicio de la segunda sección -->
+        <article>
+            <hr>
+            <h1>Capitulo 6: JavaScript: Introducci&oacute;n a las secuencias de comandos.</h1>
+            <hr>
+            <p>Ejemplos en el capitulo</p>
+            <ul>
+                <li><a href = "Capitulo 6/Ejemplos/Figura6.1.html" target = "_self">
+                    <strong>Figura 6.1</strong>.</a></li>
+                <li><a href = "Capitulo 6/Ejemplos/Figura6.2.html" target = "_self">
+                    <strong>Figura 6.2</strong>.</a></li>
+                <li><a href = "Capitulo 6/Ejemplos/Figura6.3.html" target = "_self">
+                    <strong>Figura 6.3</strong>.</a></li>
+                <li><a href = "Capitulo 6/Ejemplos/Figura6.5.html" target = "_self">
+                    <strong>Figura 6.5</strong>.</a></li>
+                <li><a href = "Capitulo 6/Ejemplos/Figura6.7.html" target = "_self">
+                    <strong>Figura 6.7</strong>.</a></li>
+                <li><a href = "Capitulo 6/Ejemplos/Figura6.14.html" target = "_self">
+                    <strong>Figura 6.14</strong>.</a></li>
+            </ul>
+            <hr>
+            <p>Ejercicios de autoevaluaci&oacute;n</p>
+            
+            <ul>
+                <li><a href = "Capitulo 6/Ejercicios/Ejercicio 6-1.html" target = "_self">
+                    <strong>Ejercicio 6.1</strong>.</a></li>
+                <li><a href = "Capitulo 6/Ejercicios/Ejercicio 6-2.html" target = "_self">
+                    <strong>Ejercicio 6.2</strong>.</a></li>
+                <li><a href = "Capitulo 6/Ejercicios/Ejercicio 6-3.html" target = "_self">
+                    <strong>Ejercicio 6.3</strong>.</a></li>
+                <li><a href = "Capitulo 6/Ejercicios/Ejercicio 6-4.html" target = "_self">
+                    <strong>Ejercicio 6.4</strong>.</a></li>
+                <li><a href = "Capitulo 6/Ejercicios/Ejercicio 6-5.html" target = "_self">
+                    <strong>Ejercicio 6.5</strong>.</a></li>
+                <li><a href = "Capitulo 6/Ejercicios/Ejercicio 6-6.html" target = "_self">
+                    <strong>Ejercicio 6.6</strong>.</a></li>
+                
+            </ul>
+            <p>Ejercicios</p>
+
+            <ul>
+                <li><a href = "Capitulo 6/Ejercicios/Ejercicio 6-7.html" target = "_self">
+                    <strong>Ejercicio 6.7</strong>.</a></li>
+                <li><a href = "Capitulo 6/Ejercicios/Ejercicio 6-8.html" target = "_self">
+                    <strong>Ejercicio 6.8</strong>.</a></li>
+                <li><a href = "Capitulo 6/Ejercicios/Ejercicio 6-9.html" target = "_self">
+                    <strong>Ejercicio 6.9</strong>.</a></li>
+                <li><a href = "Capitulo 6/Ejercicios/Ejercicio 6-10.html" target = "_self">
+                    <strong>Ejercicio 6.10</strong>.</a></li>
+                <li><a href = "Capitulo 6/Ejercicios/Ejercicio 6-11.html" target = "_self">
+                    <strong>Ejercicio 6.11</strong>.</a></li>
+                <li><a href = "Capitulo 6/Ejercicios/Ejercicio 6-12.html" target = "_self">
+                    <strong>Ejercicio 6.12</strong>.</a></li>
+                <li><a href = "Capitulo 6/Ejercicios/Ejercicio 6-13.html" target = "_self">
+                    <strong>Ejercicio 6.13</strong>.</a></li>
+                <li><a href = "Capitulo 6/Ejercicios/Ejercicio 6-14.html" target = "_self">
+                    <strong>Ejercicio 6.14</strong>.</a></li>
+                <li><a href = "Capitulo 6/Ejercicios/Ejercicio 6-15.html" target = "_self">
+                    <strong>Ejercicio 6.15</strong>.</a></li>
+                <li><a href = "Capitulo 6/Ejercicios/Ejercicio 6-16.html" target = "_self">
+                    <strong>Ejercicio 6.16</strong>.</a></li>
+                <li><a href = "Capitulo 6/Ejercicios/Ejercicio 6-17.html" target = "_self">
+                    <strong>Ejercicio 6.17</strong>.</a></li>
+                <li><a href = "Capitulo 6/Ejercicios/Ejercicio 6-18.html" target = "_self">
+                    <strong>Ejercicio 6.18</strong>.</a></li>
+                <li><a href = "Capitulo 6/Ejercicios/Ejercicio 6-19.html" target = "_self">
+                    <strong>Ejercicio 6.19</strong>.</a></li>
+                <li><a href = "Capitulo 6/Ejercicios/Ejercicio 6-20.html" target = "_self">
+                    <strong>Ejercicio 6.20</strong>.</a></li>
+                <li><a href = "Capitulo 6/Ejercicios/Ejercicio 6-21.html" target = "_self">
+                    <strong>Ejercicio 6.21</strong>.</a></li>
+                <li><a href = "Capitulo 6/Ejercicios/Ejercicio 6-22.html" target = "_self">
+                    <strong>Ejercicio 6.22</strong>.</a></li>
+                <li><a href = "Capitulo 6/Ejercicios/Ejercicio 6-23.html" target = "_self">
+                    <strong>Ejercicio 6.23</strong>.</a></li>
+                <li><a href = "Capitulo 6/Ejercicios/Ejercicio 6-24.html" target = "_self">
+                    <strong>Ejercicio 6.24</strong>.</a></li>
+            </ul>
+        </article>
+        <article>
+            <hr>
+            <h1>Capitulo 7: JavaScript: Intruscciones de control I</h1>
+            <hr>
+            <p>Ejemplos en el capitulo</p>
+            <ul>
+                <li><a href = "Capitulo 7/Ejemplos/Figura7.7.html" target = "_self">
+                    <strong>Figura 7.7</strong>.</a></li>       
+                <li><a href = "Capitulo 7/Ejemplos/Figura7.9.html" target = "_self">
+                    <strong>Figura 7.9</strong>.</a></li>     
+                <li><a href = "Capitulo 7/Ejemplos/Figura7.11.html" target = "_self">
+                    <strong>Figura 7.11</strong>.</a></li>     
+                <li><a href = "Capitulo 7/Ejemplos/Figura7.13.html" target = "_self">
+                    <strong>Figura 7.13</strong>.</a></li>     
+            </ul>
+            <hr>
+            <p>Ejercicios de autoevaluaci&oacute;n</p>
+            
+            <ul>
+                <li><a href = "Capitulo 7/Ejercicios/Ejercicio 7-1.html" target = "_self">
+                    <strong>Ejercicio 7.1</strong>.</a></li>
+                <li><a href = "Capitulo 7/Ejercicios/Ejercicio 7-2.html" target = "_self">
+                    <strong>Ejercicio 7.2</strong>.</a></li>
+                <li><a href = "Capitulo 7/Ejercicios/Ejercicio 7-3.html" target = "_self">
+                    <strong>Ejercicio 7.3</strong>.</a></li>
+                <li><a href = "Capitulo 7/Ejercicios/Ejercicio 7-4.html" target = "_self">
+                    <strong>Ejercicio 7.4</strong>.</a></li>
+                <li><a href = "Capitulo 7/Ejercicios/Ejercicio 7-5.html" target = "_self">
+                    <strong>Ejercicio 7.5</strong>.</a></li>
+                <li><a href = "Capitulo 7/Ejercicios/Ejercicio 7-6.html" target = "_self">
+                    <strong>Ejercicio 7.6</strong>.</a></li>
+                <li><a href = "Capitulo 7/Ejercicios/Ejercicio 7-7.html" target = "_self">
+                    <strong>Ejercicio 7.7</strong>.</a></li>
+                <li><a href = "Capitulo 7/Ejercicios/Ejercicio 7-8.html" target = "_self">
+                    <strong>Ejercicio 7.8</strong>.</a></li>
+            </ul>
+            <p>Ejercicios</p>
+            
+            <ul>
+                <li><a href = "Capitulo 7/Ejercicios/Ejercicio 7-9.html" target = "_self">
+                    <strong>Ejercicio 7.9</strong>.</a></li>
+                <li><a href = "Capitulo 7/Ejercicios/Ejercicio 7-10.html" target = "_self">
+                    <strong>Ejercicio 7.10</strong>.</a></li>
+                <li><a href = "Capitulo 7/Ejercicios/Ejercicio 7-11.html" target = "_self">
+                    <strong>Ejercicio 7.11</strong>.</a></li>
+                <li><a href = "Capitulo 7/Ejercicios/Ejercicio 7-12.html" target = "_self">
+                    <strong>Ejercicio 7.12</strong>.</a></li>
+                <li><a href = "Capitulo 7/Ejercicios/Ejercicio 7-13.html" target = "_self">
+                    <strong>Ejercicio 7.13</strong>.</a></li>
+                <li><a href = "Capitulo 7/Ejercicios/Ejercicio 7-14.html" target = "_self">
+                    <strong>Ejercicio 7.14</strong>.</a></li>
+                <li><a href = "Capitulo 7/Ejercicios/Ejercicio 7-15.html" target = "_self">
+                    <strong>Ejercicio 7.15</strong>.</a></li>
+                <li><a href = "Capitulo 7/Ejercicios/Ejercicio 7-16.html" target = "_self">
+                    <strong>Ejercicio 7.16</strong>.</a></li>
+                <li><a href = "Capitulo 7/Ejercicios/Ejercicio 7-17.html" target = "_self">
+                    <strong>Ejercicio 7.17</strong>.</a></li>
+                <li><a href = "Capitulo 7/Ejercicios/Ejercicio 7-18.html" target = "_self">
+                    <strong>Ejercicio 7.18</strong>.</a></li>
+                <li><a href = "Capitulo 7/Ejercicios/Ejercicio 7-19.html" target = "_self">
+                    <strong>Ejercicio 7.19</strong>.</a></li>
+                <li><a href = "Capitulo 7/Ejercicios/Ejercicio 7-20.html" target = "_self">
+                    <strong>Ejercicio 7.20</strong>.</a></li>
+                <li><a href = "Capitulo 7/Ejercicios/Ejercicio 7-21.html" target = "_self">
+                    <strong>Ejercicio 7.21</strong>.</a></li>
+                <li><a href = "Capitulo 7/Ejercicios/Ejercicio 7-22.html" target = "_self">
+                    <strong>Ejercicio 7.22</strong>.</a></li>
+                <li><a href = "Capitulo 7/Ejercicios/Ejercicio 7-23.html" target = "_self">
+                    <strong>Ejercicio 7.23</strong>.</a></li>
+            </ul>
+        </article>
+        <article>
+            <hr>
+            <h1>Capitulo 8: JavaScript: Intruscciones de control II</h1>
+            <hr>
+            <p>Ejemplos en el capitulo</p>
+            <ul>
+                <li><a href = "Capitulo 8/Ejemplos/Figura8.1.html" target = "_self">
+                    <strong>Figura 8.1</strong>.</a></li>
+                <li><a href = "Capitulo 8/Ejemplos/Figura8.2.html" target = "_self">
+                    <strong>Figura 8.2</strong>.</a></li>   
+                <li><a href = "Capitulo 8/Ejemplos/Figura8.5.html" target = "_self">
+                    <strong>Figura 8.5</strong>.</a></li>   
+                <li><a href = "Capitulo 8/Ejemplos/Figura8.6.html" target = "_self">
+                    <strong>Figura 8.6</strong>.</a></li>   
+                <li><a href = "Capitulo 8/Ejemplos/Figura8.7.html" target = "_self">
+                    <strong>Figura 8.7</strong>.</a></li>   
+                <li><a href = "Capitulo 8/Ejemplos/Figura8.9.html" target = "_self">
+                    <strong>Figura 8.9</strong>.</a></li>   
+                <li><a href = "Capitulo 8/Ejemplos/Figura8.11.html" target = "_self">
+                    <strong>Figura 8.11</strong>.</a></li>   
+                <li><a href = "Capitulo 8/Ejemplos/Figura8.12.html" target = "_self">
+                    <strong>Figura 8.12</strong>.</a></li>    
+            </ul>
+            <hr>
+            <p>Ejercicios de autoevaluaci&oacute;n</p>
+            
+            <ul>
+                <li><a href = "Capitulo 8/Ejercicios/Ejercicio 8-1.html" target = "_self">
+                    <strong>Ejercicio 8.1</strong>.</a></li>
+                <li><a href = "Capitulo 8/Ejercicios/Ejercicio 8-2.html" target = "_self">
+                    <strong>Ejercicio 8.2</strong>.</a></li>
+                <li><a href = "Capitulo 8/Ejercicios/Ejercicio 8-3.html" target = "_self">
+                    <strong>Ejercicio 8.3</strong>.</a></li>
+                
+            </ul>
+            <p>Ejercicios</p>
+            
+            <ul>
+                <li><a href = "Capitulo 8/Ejercicios/Ejercicio 8-4.html" target = "_self">
+                    <strong>Ejercicio 8.4</strong>.</a></li>
+                <li><a href = "Capitulo 8/Ejercicios/Ejercicio 8-5.html" target = "_self">
+                    <strong>Ejercicio 8.5</strong>.</a></li>
+                <li><a href = "Capitulo 8/Ejercicios/Ejercicio 8-6.html" target = "_self">
+                    <strong>Ejercicio 8.6</strong>.</a></li>
+                <li><a href = "Capitulo 8/Ejercicios/Ejercicio 8-7.html" target = "_self">
+                    <strong>Ejercicio 8.7</strong>.</a></li>
+                <li><a href = "Capitulo 8/Ejercicios/Ejercicio 8-8.html" target = "_self">
+                    <strong>Ejercicio 8.8</strong>.</a></li>
+                <li><a href = "Capitulo 8/Ejercicios/Ejercicio 8-9.html" target = "_self">
+                    <strong>Ejercicio 8.9</strong>.</a></li>
+                <li><a href = "Capitulo 8/Ejercicios/Ejercicio 8-10.html" target = "_self">
+                    <strong>Ejercicio 8.10</strong>.</a></li>
+                <li><a href = "Capitulo 8/Ejercicios/Ejercicio 8-11.html" target = "_self">
+                    <strong>Ejercicio 8.11</strong>.</a></li>
+                <li><a href = "Capitulo 8/Ejercicios/Ejercicio 8-12.html" target = "_self">
+                    <strong>Ejercicio 8.12</strong>.</a></li>
+                <li><a href = "Capitulo 8/Ejercicios/Ejercicio 8-13.html" target = "_self">
+                    <strong>Ejercicio 8.13</strong>.</a></li>
+            </ul>
+        </article>
+
+        
+        <article>
+            <hr>
+            <h1>Capitulo 9: JavaScript: funciones</h1>
+            <hr>
+            <p>Ejemplos en el capitulo</p>
+            <ul>
+                <li><a href = "Capitulo 9/Ejemplos/Figura9.2.html" target = "_self">
+                    <strong>Figura 9.2</strong>.</a></li>
+                <li><a href = "Capitulo 9/Ejemplos/Figura9.3.html" target = "_self">
+                    <strong>Figura 9.3</strong>.</a></li>  
+                <li><a href = "Capitulo 9/Ejemplos/Figura9.4.html" target = "_self">
+                    <strong>Figura 9.4</strong>.</a></li>      
+                <li><a href = "Capitulo 9/Ejemplos/Figura9.5.html" target = "_self">
+                    <strong>Figura 9.5</strong>.</a></li>      
+                <li><a href = "Capitulo 9/Ejemplos/Figura9.6.html" target = "_self">
+                    <strong>Figura 9.6</strong>.</a></li>      
+                <li><a href = "Capitulo 9/Ejemplos/Figura9.7.html" target = "_self">
+                    <strong>Figura 9.7</strong>.</a></li>      
+                <li><a href = "Capitulo 9/Ejemplos/Figura9.8.html" target = "_self">
+                    <strong>Figura 9.8</strong>.</a></li>      
+                <li><a href = "Capitulo 9/Ejemplos/Figura9.9.html" target = "_self">
+                    <strong>Figura 9.9</strong>.</a></li>   
+                <li><a href = "Capitulo 9/Ejemplos/Figura9.12.html" target = "_self">
+                    <strong>Figura 9.12</strong>.</a></li>             
+            </ul>
+            <hr>
+            <p>Ejercicios de autoevaluaci&oacute;n</p>
+            
+            <ul>
+                <li><a href = "Capitulo 9/Ejercicios/Ejercicio 9-1.html" target = "_self">
+                    <strong>Ejercicio 9.1</strong>.</a></li>
+                <li><a href = "Capitulo 9/Ejercicios/Ejercicio 9-2.html" target = "_self">
+                    <strong>Ejercicio 9.2</strong>.</a></li>
+                <li><a href = "Capitulo 9/Ejercicios/Ejercicio 9-3.html" target = "_self">
+                    <strong>Ejercicio 9.3</strong>.</a></li>
+                <li><a href = "Capitulo 9/Ejercicios/Ejercicio 9-4.html" target = "_self">
+                    <strong>Ejercicio 9.4</strong>.</a></li>
+                <li><a href = "Capitulo 9/Ejercicios/Ejercicio 9-5.html" target = "_self">
+                    <strong>Ejercicio 9.5</strong>.</a></li>
+                <li><a href = "Capitulo 9/Ejercicios/Ejercicio 9-6.html" target = "_self">
+                    <strong>Ejercicio 9.6</strong>.</a></li>
+                
+            </ul>
+            <p>Ejercicios</p>
+            
+            <ul>
+                <li><a href = "Capitulo 9/Ejercicios/Ejercicio 9-7.html" target = "_self">
+                    <strong>Ejercicio 9.7</strong>.</a></li>
+                <li><a href = "Capitulo 9/Ejercicios/Ejercicio 9-8.html" target = "_self">
+                    <strong>Ejercicio 9.8</strong>.</a></li>
+                <li><a href = "Capitulo 9/Ejercicios/Ejercicio 9-9.html" target = "_self">
+                    <strong>Ejercicio 9.9</strong>.</a></li>
+                <li><a href = "Capitulo 9/Ejercicios/Ejercicio 9-10.html" target = "_self">
+                    <strong>Ejercicio 9.10</strong>.</a></li>
+                <li><a href = "Capitulo 9/Ejercicios/Ejercicio 9-11.html" target = "_self">
+                    <strong>Ejercicio 9.11</strong>.</a></li>
+                <li><a href = "Capitulo 9/Ejercicios/Ejercicio 9-12.html" target = "_self">
+                    <strong>Ejercicio 9.12</strong>.</a></li>
+                <li><a href = "Capitulo 9/Ejercicios/Ejercicio 9-13.html" target = "_self">
+                    <strong>Ejercicio 9.13</strong>.</a></li>
+                <li><a href = "Capitulo 9/Ejercicios/Ejercicio 9-14.html" target = "_self">
+                    <strong>Ejercicio 9.14</strong>.</a></li>
+                <li><a href = "Capitulo 9/Ejercicios/Ejercicio 9-15.html" target = "_self">
+                    <strong>Ejercicio 9.15</strong>.</a></li>
+                <li><a href = "Capitulo 9/Ejercicios/Ejercicio 9-16.html" target = "_self">
+                    <strong>Ejercicio 9.16</strong>.</a></li>
+                <li><a href = "Capitulo 9/Ejercicios/Ejercicio 9-17.html" target = "_self">
+                    <strong>Ejercicio 9.17</strong>.</a></li>
+                <li><a href = "Capitulo 9/Ejercicios/Ejercicio 9-18.html" target = "_self">
+                    <strong>Ejercicio 9.18</strong>.</a></li>
+                <li><a href = "Capitulo 9/Ejercicios/Ejercicio 9-19.html" target = "_self">
+                    <strong>Ejercicio 9.19</strong>.</a></li>
+                <li><a href = "Capitulo 9/Ejercicios/Ejercicio 9-20.html" target = "_self">
+                    <strong>Ejercicio 9.20</strong>.</a></li>
+                <li><a href = "Capitulo 9/Ejercicios/Ejercicio 9-21.html" target = "_self">
+                    <strong>Ejercicio 9.21</strong>.</a></li>
+                <li><a href = "Capitulo 9/Ejercicios/Ejercicio 9-22.html" target = "_self">
+                    <strong>Ejercicio 9.22</strong>.</a></li>
+                <li><a href = "Capitulo 9/Ejercicios/Ejercicio 9-23.html" target = "_self">
+                    <strong>Ejercicio 9.23</strong>.</a></li>
+                <li><a href = "Capitulo 9/Ejercicios/Ejercicio 9-24.html" target = "_self">
+                    <strong>Ejercicio 9.24</strong>.</a></li>
+                <li><a href = "Capitulo 9/Ejercicios/Ejercicio 9-25.html" target = "_self">
+                    <strong>Ejercicio 9.25</strong>.</a></li>
+                <li><a href = "Capitulo 9/Ejercicios/Ejercicio 9-26.html" target = "_self">
+                    <strong>Ejercicio 9.26</strong>.</a></li>
+                <li><a href = "Capitulo 9/Ejercicios/Ejercicio 9-27.html" target = "_self">
+                    <strong>Ejercicio 9.27</strong>.</a></li>
+                <li><a href = "Capitulo 9/Ejercicios/Ejercicio 9-28.html" target = "_self">
+                    <strong>Ejercicio 9.28</strong>.</a></li>
+                <li><a href = "Capitulo 9/Ejercicios/Ejercicio 9-29.html" target = "_self">
+                    <strong>Ejercicio 9.29</strong>.</a></li>
+                <li><a href = "Capitulo 9/Ejercicios/Ejercicio 9-30.html" target = "_self">
+                    <strong>Ejercicio 9.30</strong>.</a></li>           
+            </ul>
+        </article>
+        </section> <!-- Fin de la segunda sección-->
+        <section id="exampletwo-content"> <!-- Inicio de la tercer sección-->
+            <article>
+            <hr>
+            <h1>Capitulo 10: JavaScript: Arreglos.</h1>
+            <hr>
+            <p>Ejemplos en el capitulo</p>
+            <ul>
+                <li><a href = "Capitulo 10/Ejemplos/Ejemplo 1.html" target = "_self">
+                    <strong>Figura 10.3</strong>.</a></li>
+                <li><a href = "Capitulo 10/Ejemplos/Ejemplo 2.html" target = "_self">
+                    <strong>Figura 10.5</strong>.</a></li>
+                <li><a href = "Capitulo 10/Ejemplos/Ejemplo 3.html" target = "_self">
+                    <strong>Figura 10.7</strong>.</a></li>
+                <li><a href = "Capitulo 10/Ejemplos/Ejemplo 4.html" target = "_self">
+                    <strong>Figura 10.9</strong>.</a></li>
+                <li><a href = "Capitulo 10/Ejemplos/Ejemplo 5.html" target = "_self">
+                    <strong>Figura 10.11</strong>.</a></li>
+                <li><a href = "Capitulo 10/Ejemplos/Ejemplo 6.html" target = "_self">
+                    <strong>Figura 10.13</strong>.</a></li>
+                <li><a href = "Capitulo 10/Ejemplos/Ejemplo 7.html" target = "_self">
+                    <strong>Figura 10.15</strong>.</a></li>
+                <li><a href = "Capitulo 10/Ejemplos/Ejemplo 8.html" target = "_self">
+                    <strong>Figura 10.17</strong>.</a></li>
+                <li><a href = "Capitulo 10/Ejemplos/Ejemplo 9.html" target = "_self">
+                    <strong>Figura 10.20</strong>.</a></li>
+            </ul>
+            <hr>
+            <p>Ejercicios de autoevaluaci&oacute;n</p>
+            
+            <ul>
+                <li><a href = "Capitulo 10/Ejercicios/Ejercicio 1.html" target = "_self">
+                    <strong>Ejercicio 10.1</strong>.</a></li>
+                <li><a href = "Capitulo 10/Ejercicios/Ejercicio 2.html" target = "_self">
+                    <strong>Ejercicio 10.2</strong>.</a></li>
+                <li><a href = "Capitulo 10/Ejercicios/Ejercicio 3.html" target = "_self">
+                    <strong>Ejercicio 10.3</strong>.</a></li>
+                <li><a href = "Capitulo 10/Ejercicios/Ejercicio 4.html" target = "_self">
+                    <strong>Ejercicio 10.4</strong>.</a></li>
+                <li><a href = "Capitulo 10/Ejercicios/Ejercicio 5.html" target = "_self">
+                    <strong>Ejercicio 10.5</strong>.</a></li>
+                
+            </ul>
+            
+            <p>Ejercicios</p>
+
+            <ul>
+                <li><a href = "Capitulo 10/Ejercicios/Ejercicio 6.html" target = "_self">
+                    <strong>Ejercicio 10.6</strong>.</a></li>
+                <li><a href = "Capitulo 10/Ejercicios/Ejercicio 7.html" target = "_self">
+                    <strong>Ejercicio 10.7</strong>.</a></li>
+                <li><a href = "Capitulo 10/Ejercicios/Ejercicio 8.html" target = "_self">
+                    <strong>Ejercicio 10.8</strong>.</a></li>
+                <li><a href = "Capitulo 10/Ejercicios/Ejercicio 9.html" target = "_self">
+                    <strong>Ejercicio 10.9</strong>.</a></li>
+                <li><a href = "Capitulo 10/Ejercicios/Ejercicio 10.html" target = "_self">
+                    <strong>Ejercicio 10.10</strong>.</a></li>
+                <li><a href = "Capitulo 10/Ejercicios/Ejercicio 11.html" target = "_self">
+                    <strong>Ejercicio 10.11</strong>.</a></li>
+                <li><a href = "Capitulo 10/Ejercicios/Ejercicio 12.html" target = "_self">
+                    <strong>Ejercicio 10.12</strong>.</a></li>
+                <li><a href = "Capitulo 10/Ejercicios/Ejercicio 13.html" target = "_self">
+                    <strong>Ejercicio 10.13</strong>.</a></li>
+                <li><a href = "Capitulo 10/Ejercicios/Ejercicio 14.html" target = "_self">
+                    <strong>Ejercicio 10.14</strong>.</a></li>
+                <li><a href = "Capitulo 10/Ejercicios/Ejercicio 15.html" target = "_self">
+                    <strong>Ejercicio 10.15</strong>.</a></li>
+                <li><a href = "Capitulo 10/Ejercicios/Ejercicio 16.html" target = "_self">
+                    <strong>Ejercicio 10.16</strong>.</a></li>
+                <li><a href = "Capitulo 10/Ejercicios/Ejercicio 17.html" target = "_self">
+                    <strong>Ejercicio 10.17</strong>.</a></li>
+            </ul>
+        </article>
+        <article>
+            <hr>
+            <h1>Capitulo 11: JavaScript: Objetos.</h1>
+            <hr>
+            <p>Ejemplos en el capitulo</p>
+            <ul>
+                <li><a href = "Capitulo 11/Ejemplos/Ejemplo 1.html" target = "_self">
+                    <strong>Figura 11.4</strong>.</a></li>
+                <li><a href = "Capitulo 11/Ejemplos/Ejemplo 2.html" target = "_self">
+                    <strong>Figura 11.6</strong>.</a></li>
+                <li><a href = "Capitulo 11/Ejemplos/Ejemplo 3.html" target = "_self">
+                    <strong>Figura 11.8</strong>.</a></li>  
+                <li><a href = "Capitulo 11/Ejemplos/Ejemplo 4.html" target = "_self">
+                    <strong>Figura 11.11</strong>.</a></li>  
+                <li><a href = "Capitulo 11/Ejemplos/Ejemplo 5.html" target = "_self">
+                    <strong>Figura 11.17</strong>.</a></li>               
+            </ul>
+            <hr>
+            <p>Ejercicios de autoevaluaci&oacute;n</p>
+            
+            <ul>
+                <li><a href = "Capitulo 11/Ejercicios/Ejercicio 1.html" target = "_self">
+                    <strong>Ejercicio 11.1</strong>.</a></li>
+            </ul>
+            <p>Ejercicios</p>
+            
+            <ul>
+                <li><a href = "Capitulo 11/Ejercicios/Ejercicio 2.html" target = "_self">
+                    <strong>Ejercicio 11.2</strong>.</a></li>
+                <li><a href = "Capitulo 11/Ejercicios/Ejercicio 3.html" target = "_self">
+                    <strong>Ejercicio 11.3</strong>.</a></li>
+                <li><a href = "Capitulo 11/Ejercicios/Ejercicio 4.html" target = "_self">
+                    <strong>Ejercicio 11.4</strong>.</a></li>
+                <li><a href = "Capitulo 11/Ejercicios/Ejercicio 5.html" target = "_self">
+                    <strong>Ejercicio 11.5</strong>.</a></li>
+                <li><a href = "Capitulo 11/Ejercicios/Ejercicio 6.html" target = "_self">
+                    <strong>Ejercicio 11.6</strong>.</a></li>
+                <li><a href = "Capitulo 11/Ejercicios/Ejercicio 7.html" target = "_self">
+                    <strong>Ejercicio 11.7</strong>.</a></li>
+                <li><a href = "Capitulo 11/Ejercicios/Ejercicio 8.html" target = "_self">
+                    <strong>Ejercicio 11.8</strong>.</a></li>
+                <li><a href = "Capitulo 11/Ejercicios/Ejercicio 9.html" target = "_self">
+                    <strong>Ejercicio 11.9</strong>.</a></li>
+                <li><a href = "Capitulo 11/Ejercicios/Ejercicio 10.html" target = "_self">
+                    <strong>Ejercicio 11.10</strong>.</a></li>
+                <li><a href = "Capitulo 11/Ejercicios/Ejercicio 11.html" target = "_self">
+                    <strong>Ejercicio 11.11</strong>.</a></li>
+                <li><a href = "Capitulo 11/Ejercicios/Ejercicio 12.html" target = "_self">
+                    <strong>Ejercicio 11.12</strong>.</a></li>
+                <li><a href = "Capitulo 11/Ejercicios/Ejercicio 13.html" target = "_self">
+                    <strong>Ejercicio 11.13</strong>.</a></li>
+                <li><a href = "Capitulo 11/Ejercicios/Ejercicio 14.html" target = "_self">
+                    <strong>Ejercicio 11.14</strong>.</a></li>
+                <li><a href = "Capitulo 11/Ejercicios/Ejercicio 15.html" target = "_self">
+                    <strong>Ejercicio 11.15</strong>.</a></li>
+                <li><a href = "Capitulo 11/Ejercicios/Ejercicio 16.html" target = "_self">
+                    <strong>Ejercicio 11.16</strong>.</a></li>
+                <li><a href = "Capitulo 11/Ejercicios/Ejercicio 17.html" target = "_self">
+                    <strong>Ejercicio 11.17</strong>.</a></li>
+                <li><a href = "Capitulo 11/Ejercicios/Ejercicio 18.html" target = "_self">
+                    <strong>Ejercicio 11.18</strong>.</a></li>
+                <li><a href = "Capitulo 11/Ejercicios/Ejercicio 19.html" target = "_self">
+                    <strong>Ejercicio 11.19</strong>.</a></li>
+                <li><a href = "Capitulo 11/Ejercicios/Ejercicio 20.html" target = "_self">
+                    <strong>Ejercicio 11.20</strong>.</a></li>
+                <li><a href = "Capitulo 11/Ejercicios/Ejercicio 21.html" target = "_self">
+                    <strong>Ejercicio 11.21</strong>.</a></li>
+                <li><a href = "Capitulo 11/Ejercicios/Ejercicio 22.html" target = "_self">
+                    <strong>Ejercicio 11.22</strong>.</a></li>
+                <li><a href = "Capitulo 11/Ejercicios/Ejercicio 23.html" target = "_self">
+                    <strong>Ejercicio 11.23</strong>.</a></li>
+                <li><a href = "Capitulo 11/Ejercicios/Ejercicio 24.html" target = "_self">
+                    <strong>Ejercicio 11.24</strong>.</a></li>
+                <li><a href = "Capitulo 11/Ejercicios/Ejercicio 25.html" target = "_self">
+                    <strong>Ejercicio 11.25</strong>.</a></li>
+                <li><a href = "Capitulo 11/Ejercicios/Ejercicio 26.html" target = "_self">
+                    <strong>Ejercicio 11.26</strong>.</a></li>
+                <li><a href = "Capitulo 11/Ejercicios/Ejercicio 27.html" target = "_self">
+                    <strong>Ejercicio 11.27</strong>.</a></li>
+                <li><a href = "Capitulo 11/Ejercicios/Ejercicio 28.html" target = "_self">
+                    <strong>Ejercicio 11.28</strong>.</a></li>
+            </ul>
+        </article>
+        <article>
+            <hr>
+            <h1>Capitulo 12: Modelo de objetos de documento (DOM): Objetos y colecciones.</h1>
+            <hr>
+            <p>Ejemplos en el capitulo</p>
+            <ul>
+                <li><a href = "Capitulo 12/Ejemplos/Ejemplo 1.html" target = "_self">
+                    <strong>Figura 12.2</strong>.</a></li>  
+                <li><a href = "Capitulo 12/Ejemplos/Ejemplo 2.html" target = "_self">
+                    <strong>Figura 12.4</strong>.</a></li>  
+                <li><a href = "Capitulo 12/Ejemplos/Ejemplo 3.html" target = "_self">
+                    <strong>Figura 12.13</strong>.</a></li>  
+                <li><a href = "Capitulo 12/Ejemplos/Ejemplo 4.html" target = "_self">
+                    <strong>Figura 12.15</strong>.</a></li>  
+                <li><a href = "Capitulo 12/Ejemplos/Ejemplo 5.html" target = "_self">
+                    <strong>Figura 12.18</strong>.</a></li>  
+            </ul>
+            <hr>
+            <p>Ejercicios de autoevaluaci&oacute;n</p>
+            
+            <ul>
+                <li><a href = "Capitulo 12/Ejercicios/Ejercicio 1.html" target = "_self">
+                    <strong>Ejercicio 12.1</strong>.</a></li>
+                <li><a href = "Capitulo 12/Ejercicios/Ejercicio 2.html" target = "_self">
+                    <strong>Ejercicio 12.2</strong>.</a></li>
+                
+            </ul>
+            <p>Ejercicios</p>
+            
+            <ul>
+                <li><a href = "Capitulo 12/Ejercicios/Ejercicio 3.html" target = "_self">
+                    <strong>Ejercicio 12.3</strong>.</a></li>
+                <li><a href = "Capitulo 12/Ejercicios/Ejercicio 4.html" target = "_self">
+                    <strong>Ejercicio 12.4</strong>.</a></li>
+                <li><a href = "Capitulo 12/Ejercicios/Ejercicio 5.html" target = "_self">
+                    <strong>Ejercicio 12.5</strong>.</a></li>
+                <li><a href = "Capitulo 12/Ejercicios/Ejercicio 6.html" target = "_self">
+                    <strong>Ejercicio 12.6</strong>.</a></li>
+                <li><a href = "Capitulo 12/Ejercicios/Ejercicio 7.html" target = "_self">
+                    <strong>Ejercicio 12.7</strong>.</a></li>   
+                <li><a href = "Capitulo 12/Ejercicios/Ejercicio 8.html" target = "_self">
+                    <strong>Ejercicio 12.8</strong>.</a></li>   
+            </ul>
+            <hr>
+        </article>
+        <article>
+            <hr>
+            <h1>Capitulo 13: Modelo de objetos de JavaScript: Un an&aacute;lisis m&aacute;s detallado.</h1>
+            <hr>
+            <p>Ejemplos en el capitulo</p>
+            <ul>
+                <li><a href = "Capitulo 13/Ejemplos/Ejemplo 1.html" target = "_self">
+                    <strong>Figura 13.1</strong>.</a></li>
+                <li><a href = "Capitulo 13/Ejemplos/Ejemplo 2.html" target = "_self">
+                    <strong>Figura 13.3</strong>.</a></li>
+                <li><a href = "Capitulo 13/Ejemplos/Ejemplo 3.html" target = "_self">
+                    <strong>Figura 13.6</strong>.</a></li>
+                <li><a href = "Capitulo 13/Ejemplos/Ejemplo 4.html" target = "_self">
+                    <strong>Figura 13.8</strong>.</a></li>
+                <li><a href = "Capitulo 13/Ejemplos/Ejemplo 5.html" target = "_self">
+                    <strong>Figura 13.11</strong>.</a></li>            
+            </ul>
+            <hr>
+            <p>Ejercicios de autoevaluaci&oacute;n</p>
+            
+            <ul>
+                <li><a href = "Capitulo 13/Ejercicios/Ejercicio 1.html" target = "_self">
+                    <strong>Ejercicio 13.1</strong>.</a></li>  
+                <li><a href = "Capitulo 13/Ejercicios/Ejercicio 2.html" target = "_self">
+                    <strong>Ejercicio 13.2</strong>.</a></li>  
+            </ul>
+            <p>Ejercicios</p>
+            
+            <ul>
+                <li><a href = "Capitulo 13/Ejercicios/Ejercicio 3.html" target = "_self">
+                    <strong>Ejercicio 13.3</strong>.</a></li>
+                <li><a href = "Capitulo 13/Ejercicios/Ejercicio 4.html" target = "_self">
+                    <strong>Ejercicio 13.4</strong>.</a></li> 
+                <li><a href = "Capitulo 13/Ejercicios/Ejercicio 5.html" target = "_self">
+                    <strong>Ejercicio 13.5</strong>.</a></li> 
+                <li><a href = "Capitulo 13/Ejercicios/Ejercicio 6.html" target = "_self">
+                    <strong>Ejercicio 13.6</strong>.</a></li>
+                <li><a href = "Capitulo 13/Ejercicios/Ejercicio 7.html" target = "_self">
+                    <strong>Ejercicio 13.7</strong>.</a></li>
+                <li><a href = "Capitulo 13/Ejercicios/Ejercicio 8.html" target = "_self">
+                    <strong>Ejercicio 13.8</strong>.</a></li>            
+            </ul>
+        </article>
+    </section> <!-- Fin de la tercer sección-->
+    <footer> <!-- Declaración del pie de pagina, dentro de el hay un div con la clase container, que nos servira para aplicar de manera
+    directa un estilo de css-->
+        <div class="container">
+          <p>2023. Ismael Hernandez Gutierrez 197O00556     Instituto Tecnologico Superior de Xalapa</p>
+        </div>
+      </footer>
+</body>
+</html>
