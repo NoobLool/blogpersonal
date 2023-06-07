@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 6.4</title>
+
+    <link rel="stylesheet" href="../../css/baseStyle.css" type="text/css">
+
+</head>
+<body>
+    <li><a href = "../../index.html" target = "_self">
+        <strong>Inicio</strong></a></li>
+    <div class="contenido">
+        <h3>
+            Identifique y corrija los errores en cada una de las siguientes instrucciones:
+        </h3>
+        <ol type="a" class="boxContent">
+            <div class="oracion">
+                <li style="font-weight: bold;">
+                    if (<em>c < 7</em>); <br>
+                    &emsp;&emsp;&emsp;&emsp;window.alert("<em>c es menor que 7</em>");
+                </li>
+                <p class="respuesta">
+                    El error es el ";", la forma correcta es: <br><br>
+                    if (<em>c < 7</em>) <br>
+                    &emsp;&emsp;&emsp;&emsp;window.alert("<em>c es menor que 7</em>");
+                    <br><br>
+                    En la primera forma puede no haber error, pero si lo que se desea es que aparezca la alerta tomando en cuenta la condici&oacute;n, entonces se debe de quitar el ";".
+                </p>
+            </div>
+            <div class="oracion">
+                <li style="font-weight: bold;">
+                    if (<em>c => 7</em>) <br>
+                    &emsp;&emsp;&emsp;&emsp;window.alert("<em>c es igual o mayor que 7</em>");
+                </li>
+                <p class="respuesta">
+                    El error se encuentra en el operador relacional <em>"=>"</em>, la forma correcta es: <br><br>
+                    if (<em>c >= 7</em>); <br>
+                    &emsp;&emsp;&emsp;&emsp;window.alert("<em>c es igual o mayor que 7</em>");
+                </p>
+            </div>
+        </ol>
+    </div>
+</body>
+</html>

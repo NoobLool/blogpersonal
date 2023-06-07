@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 6.20</title>
+
+    <script>
+        var n1,n2,n3,n4,n5,mayor,menor;
+
+        n1=window.prompt("1. Ingresa un numero");
+        n2=window.prompt("2. Ingresa un numero");
+        n3=window.prompt("3. Ingresa un numero");
+        n4=window.prompt("4. Ingresa un numero");
+        n5=window.prompt("5. Ingresa un numero");
+
+        n1=parseInt(n1); n2=parseInt(n2); n3=parseInt(n3); n4=parseInt(n4); n5=parseInt(n5);
+
+        menor=n1;
+
+        if(n2<menor){
+            menor=n2;
+        }
+        if(n3<menor){
+            menor=n3;
+        }
+        if(n4<menor){
+            menor=n4;
+        }
+        if(n5<menor){
+            menor=n5;
+        }
+
+        mayor=n1;
+
+        if(n2>mayor){
+            mayor=n2;
+        }
+        if(n3>mayor){
+            mayor=n3;
+        }
+        if(n4>mayor){
+            mayor=n4;
+        }
+        if(n5>mayor){
+            mayor=n5;
+        }
+
+        document.write("<h2>El número mayor es: "+mayor+" <br>El número menor es: "+menor+"</h2>");
+
+    </script>
+
+</head>
+<body>
+    <li><a href = "../../index.html" target = "_self">
+        <strong>Inicio</strong></a></li>
+</body>
+</html>

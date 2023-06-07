@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 8.4</title>
+
+    <link rel="stylesheet" href="/CSS3/css/baseStyle.css" type="text/css">
+
+</head>
+<body>   
+    <li><a href = "../../index.html" target = "_self">
+        <strong>Inicio</strong></a></li>
+    <div class="contenido">
+        <h3>
+            Encuentre el error en cada uno de los siguientes segmentos de código. [<em>Nota</em>: puede haber más de un error].
+        </h3>
+        <ol type="a" class="boxContent">
+            <div class="oracion">
+                <li>
+                    <b>For</b> ( x = 100, x >= 1, ++x ) <br>
+                    document.writeln( x );
+                </li>
+                <p class="respuesta">
+                    Correción: <br>
+                    <b>for</b> ( x = 100; x >= 1; --x ) <br>
+                    &emsp;&emsp;document.writeln( x );
+                </p>
+            </div>
+            <div class="oracion">
+                <li>
+                    El siguiente código debe imprimirse sin importar si el valor entero es par o impar: <br>
+                    <b>switch</b> ( valor % 2 ) <br>
+                    { <br>
+                    &emsp;&emsp;<b>case 0</b>: <br>
+                    &emsp;&emsp;&emsp;&emsp;document.writeln( "Entero par" ); <br>
+                    &emsp;&emsp;<b>case 1</b>: <br>
+                    &emsp;&emsp;&emsp;&emsp;document.writeln( "Entero impar" ); <br>
+                    }
+                </li>
+                <p class="respuesta">
+                    Correción: <br>
+                    <b>switch</b> ( valor % 2 ) <br>
+                    { <br>
+                    &emsp;&emsp;<b>default</b>: <br>
+                    &emsp;&emsp;&emsp;document.writeln( "Entero par" ); <br>
+                    &emsp;&emsp;&emsp;document.writeln( "Entero impar" ); <br>
+                    &emsp;&emsp;&emsp;<b>break;</b> <br>
+                    }
+                </p>
+            </div>
+            <div class="oracion">
+                <li>
+                    El siguiente código debe imprimir los enteros impares del 19 al 1: <br>
+                    <b>for</b> ( x = 19; x >= 1; x += 2 ) <br>
+                    &emsp;&emsp;document.writeln( x );
+                </li>
+                <p class="respuesta">
+                    Correción:
+                    <b>for</b> ( x = 19; x >= 1; x -= 2 ) <br>
+                    &emsp;&emsp;document.writeln( x );
+                </p>
+            </div>
+            <div class="oracion">
+                <li>
+                    El siguiente código debe imprimir los enteros pares del 2 al 100: <br>
+                    contador = 2; <br>
+                    <b>do</b>{ <br>
+                    &emsp;&emsp;document.writeln( contador ); <br>
+                    &emsp;&emsp;contador += 2; <br>
+                    } <b>While</b> ( contador < 100 );
+                </li>
+                <p class="respuesta">
+                    Correción: <br>
+                    contador = 2; <br>
+                    <b>do</b>{ <br>
+                    &emsp;&emsp;document.writeln( contador ); <br>
+                    &emsp;&emsp;contador += 2; <br>
+                    } <b>while</b> ( contador <= 100 );
+                </p>
+            </div>
+        </ol>
+    </div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 7.8</title>
+
+    <link rel="stylesheet" href="../../css/baseStyle.css" type="text/css">
+
+</head>
+<body>
+    <li><a href = "../../index.html" target = "_self">
+        <strong>Inicio</strong></a></li>
+    <div class="contenido">
+        <h3>
+            ¿Qu&eacute; est&aacute; mal en la siguiente instrucci&oacute;n de repetici&oacute;n <em><b>while</b></em>? <br>
+            <b>while</b> ( z >= 0 ) <br>
+            &emsp;&emsp;suma += z;
+        </h3>
+        <p class="boxContent">
+            Debido a que la variable z no es modificada en el cuerpo del <em>while</em>, se tendr&aacute; un ciclo infinito. Esto pasa s&oacute;lo si la condici&oacute;n se cumple. Para evitarlo, z debe decrementarse para que pueda ser menor a 0.
+        </p>
+    </div>
+</body>
+</html>

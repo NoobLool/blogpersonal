@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 8.12</title>
+
+    <link rel="stylesheet" href="../../css/baseStyle.css" type="text/css">
+
+</head>
+<body>
+    <li><a href = "../../index.html" target = "_self">
+        <strong>Inicio</strong></a></li>
+    <div class="contenido">
+        <h3>
+            Suponga que <em>i = 1, j = 2, k = 3</em> y <em>m = 2</em>. ¿Qué es lo que imprime cada una de las siguientes instrucciones? ?Son necesarios los paréntesis en cada caso?
+        </h3>
+        <ol class="boxContent" type="a">
+            <div class="oracion">
+                <li>
+                    <em>document.writeln( j == 1 );</em>
+                </li>
+                <p class="respuesta">
+                    Los paréntesis son necesarios ya que son los de la función <em>writeln</em>. <br>
+                    Resultado: <br>
+                    false
+                </p>
+            </div>
+            <div class="oracion">
+                <li>
+                    <em>document.writeln( j == 3 );</em>
+                </li>
+                <p class="respuesta">
+                    Los paréntesis son necesarios ya que son los de la función <em>writeln</em>. <br>
+                    Resultado: <br>
+                    false
+                </p>
+            </div>
+            <div class="oracion">
+                <li>
+                    <em>document.writeln( i >= 1 && j < 4 );</em>
+                </li>
+                <p class="respuesta">
+                    Los paréntesis son necesarios ya que son los de la función <em>writeln</em>. <br>
+                    Resultado: <br>
+                    true
+                </p>
+            </div>
+            <div class="oracion">
+                <li>
+                    <em>document.writeln( m <= 99 && k < m );</em>
+                </li>
+                <p class="respuesta">
+                    Los paréntesis son necesarios ya que son los de la función <em>writeln</em>. <br>
+                    Resultado: <br>
+                    false
+                </p>
+            </div>
+            <div class="oracion">
+                <li>
+                    <em>document.writeln( j >= i || k == m );</em>
+                </li>
+                <p class="respuesta">
+                    Los paréntesis son necesarios ya que son los de la función <em>writeln</em>. <br>
+                    Resultado: <br>
+                    true
+                </p>
+            </div>
+            <div class="oracion">
+                <li>
+                    <em>document.writeln( k + m < j || 3 - j >= k );</em>
+                </li>
+                <p class="respuesta">
+                    Los paréntesis son necesarios ya que son los de la función <em>writeln</em>. <br>
+                    Resultado: <br>
+                    false
+                </p>
+            </div>
+            <div class="oracion">
+                <li>
+                    <em>document.writeln( !(k > m) );</em>
+                </li>
+                <p class="respuesta">
+                    Los paréntesis !(k > m) no son necesarios <br>
+                    Resultado: <br>
+                    false
+                </p>
+            </div>
+        </ol>
+    </div>
+</body>
+</html>

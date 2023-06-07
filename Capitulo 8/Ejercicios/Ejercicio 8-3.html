@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 8.3</title>
+
+    <link rel="stylesheet" href="../../css/baseStyle.css" type="text/css">
+
+</head>
+<body>
+    <li><a href = "../../index.html" target = "_self">
+        <strong>Inicio</strong></a></li>
+    <div class="contenido">
+        <h3>
+            Encuentre el error en cada uno de los siguientes segementos de código, y explique cómo corregirlo:
+        </h3>
+        <ol class="boxContent" type="a">
+            <div class="oracion">
+                <li>
+                    x = 1; <br>
+                    <b>while</b> ( x <= 10 ); <br>
+                    &emsp;&emsp;++x; <br>
+                    }
+                </li>
+                <p class="respuesta">
+                    Necesita la llave que abre '{', se reemplaza por el ';' después del while: <br>
+                    x = 1; <br>
+                    <b>while</b> ( x <= 10 ){ <br>
+                    &emsp;&emsp;++x; <br>
+                    }
+                </p>
+            </div>
+            <div class="oracion">
+                <li>
+                    <b>switch</b> ( n )<br>
+                    { <br>
+                    &emsp;&emsp;<b>case 1</b>: <br>
+                    &emsp;&emsp;&emsp;document.writeln("El número es 1"); <br>
+                    &emsp;&emsp;<b>case 2</b>: <br>
+                    &emsp;&emsp;&emsp;document.writeln("El número es 2"); <br>
+                    &emsp;&emsp;&emsp;<b>break;</b> <br>
+                    &emsp;&emsp;<b>default</b>: <br>
+                    &emsp;&emsp;&emsp;document.writeln("El número no es 1 ni 2"); <br>
+                    &emsp;&emsp;&emsp;<b>break;</b> <br>
+                    }
+                </li>
+                <p class="respuesta">
+                    Falta un <em>break</em> en el primer <em>case</em> par que el <em>case 2</em> no se ejecute siempre cuando lo haga en 1: <br>
+                    <b>switch</b> ( n )<br>
+                    { <br>
+                    &emsp;&emsp;<b>case 1</b>: <br>
+                    &emsp;&emsp;&emsp;document.writeln("El número es 1"); <br>
+                    &emsp;&emsp;&emsp;<b>break;</b> <br>
+                    &emsp;&emsp;<b>case 2</b>: <br>
+                    &emsp;&emsp;&emsp;document.writeln("El número es 2"); <br>
+                    &emsp;&emsp;&emsp;<b>break;</b> <br>
+                    &emsp;&emsp;<b>default</b>: <br>
+                    &emsp;&emsp;&emsp;document.writeln("El número no es 1 ni 2"); <br>
+                    &emsp;&emsp;&emsp;<b>break;</b> <br>
+                    }
+                </p>
+            </div>
+            <div class="oracion">
+                <li>
+                    El siguiente código debe imprimir los valores 1 al 10: <br>
+                    n = 1; <br>
+                    <b>while</b> ( n < 10 ) <br>
+                    &emsp;&emsp;document.writeln( n++ );
+                </li>
+                <p class="respuesta">
+                    No imprimirá el número 10, la condición debe de ser con '<=': <br>
+                    n = 1; <br>
+                    <b>while</b> ( n <= 10 ) <br>
+                    &emsp;&emsp;document.writeln( n++ );
+                </p>
+            </div>
+        </ol>
+    </div>
+</body>
+</html>

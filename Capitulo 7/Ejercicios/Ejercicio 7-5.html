@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 7.5</title>
+
+    <link rel="stylesheet" href="../../css/baseStyle.css" type="text/css">
+
+</head>
+<body>
+    <li><a href = "../../index.html" target = "_self">
+        <strong>Inicio</strong></a></li>
+    <div class="contenido">
+        <h3>
+            Combine las instrucciones que escribi&oacute; en el ejercicio 7.4 para formar una secuencia de comandos que calcule e imprima la suma de los enteros del 1 al 10. Use la instrucci&oacute;n <em>while</em> para iterar a trav&eacute;s de las instrucciones de c&aacute;lculo e incremento. El ciclo debe terminar cuando el valor de x se vuelva 11.
+        </h3>
+
+        <p class="boxContent">
+            let suma = 0, x = 1; <br>
+            while (x < 11) suma += x++; <br>
+            document.writeln("&lt;h3>La suma es: " + suma + "&lt;/h3>");
+        </p>
+
+        <script>
+            let suma = 0, x = 1;
+            while (x < 11) suma += x++;
+            document.writeln("<h3>La suma es: " + suma + "</h3>");
+        </script>
+    </div>
+</body>
+</html>

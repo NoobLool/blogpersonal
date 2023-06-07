@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 8.9</title>
+
+    <link rel="stylesheet" href="../../css/baseStyle.css" type="text/css">
+
+</head>
+<body>
+    <li><a href = "../../index.html" target = "_self">
+        <strong>Inicio</strong></a></li>
+    <div class="contenido">
+        <h3>
+            Una aplicación interesante de las computadoras es dibujar gráficos convencionales y de barra (también llamados histogramas). Escriba una secuencia de comandos que lea cinco números entre 1 y 30. Por cada número imprima texto en HTML5 que muestre una línea que contenga el mismo número de astericos adyacentes. Por ejemplo, si su programa lee el número 7, debe producir texto en HTMl5 que muestre *******.
+        </h3>
+
+        <div class="boxContent">
+            <script>
+                let validar = /[0-9]/;
+                let numero, asteriscos;
+                
+                for(let i = 1; i <= 5; i++){
+                    asteriscos = "";
+
+                    numero = window.prompt("Introduzca un número, del 1 al 30", "0");
+                    
+                    if(validar.test(numero) && (parseInt(numero) > 0 && parseInt(numero) < 31)){
+                        
+                        for(let i = 1; i <= parseInt(numero); i++) asteriscos += "*";
+                        
+                        document.writeln("<p>Numero " + numero + ": " + asteriscos + "</p>");
+                    }
+                    else{
+                        document.writeln("Introduzca un valor válido.");
+                        break;
+                    }
+                    
+                }
+            </script>
+        </div>
+    </div>
+</body>
+</html>

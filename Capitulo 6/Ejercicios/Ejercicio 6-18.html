@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 6.18</title>
+    <script>
+        var x,y,z, sum, prom, prod, may, men;
+
+        x=window.prompt("Ingresa el primer numero");
+        y=window.prompt("Ingresa el segundo numero");
+        z=window.prompt("Ingresa el tercer numeros");
+
+        x=parseInt(x); y=parseInt(y); z=parseInt(z);
+
+        sum=x+y+z;
+        prod=x*y*z;
+        prom=parseFloat((x+y+z)/3)
+
+        if(x<y){
+            men=x;
+            if(men>z){
+                men=z;
+            }
+        }else{
+            men=y;
+            if(men>z){
+                men=z;
+            }
+        }
+
+        if(x>y){
+            may=x;
+            if(x<z){
+                may=z;
+            }
+        }else{
+            may=y;
+            if(y<z){
+                may=z;
+            }
+        }
+
+        window.alert("Suma: "+sum+"\nPromedio: "+prom+"\nProducto: "+prod+"\nMenor: "+men+"\nMayor: "+may);
+
+    </script>
+</head>
+<body>
+    <li><a href = "../../index.html" target = "_self">
+        <strong>Inicio</strong></a></li>
+</body>
+</html>

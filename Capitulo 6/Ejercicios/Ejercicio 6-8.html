@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 6.8</title>
+</head>
+<body>
+    <li><a href = "../../index.html" target = "_self">
+        <strong>Inicio</strong></a></li>
+    <h3>Escriba instrucciones de JavaScript que realicen cada una de las siguientes tareas.</h3>
+    <p>
+        a) Muestre el mensaje “Escriba dos números" usando el objeto window.
+        <br>
+        b) Asigne el producto de las variables b y c a la variable a.
+        <br>
+        c) Indique que una sección de comandos va a realizar un cálculo de nómina de ejemplo.
+    </p>
+</body>
+<script>
+    var b,c, a;
+    b=window.prompt("Escriba un numero");
+    c=window.prompt("Escriba otro numero");
+
+    a=parseInt(b)*parseInt(c);
+
+    document.writeln("<p style=color:blue> el producto de b y c es 'a': "+a+"</p>");
+</script>
+</html>

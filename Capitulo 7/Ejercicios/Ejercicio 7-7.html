@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 7.7</title>
+
+    <link rel="stylesheet" href="../../css/baseStyle.css" type="text/css">
+
+</head>
+<body>
+    <li><a href = "../../index.html" target = "_self">
+        <strong>Inicio</strong></a></li>
+    <div class="contenido">
+        <h3>
+            Identifique y corrija los <em>errores</em> en cada uno de los siguientes segmentos de c&oacute;digo:
+        </h3>
+
+        <ol class="boxContent" type="a">
+            <div class="oracion">
+                <li>
+                    <em>
+                        <b>while</b> ( c <= 5 ) { <br>
+                            &emsp;&emsp;producto *= c;<br>
+                            &emsp;&emsp;++c;<br>
+                    </em>
+                </li>
+                <p class="respuesta">
+                    Falta la llave que cierra el ciclo <em>while</em>: <br>
+                    <em>
+                        <b>while</b> ( c <= 5 ) { <br>
+                            &emsp;producto *= c;<br>
+                            &emsp;++c;<br>
+                        }
+                    </em>
+                </p>
+            </div>
+            <div class="oracion">
+                <li>
+                    <em>
+                        <b>if</b> ( genero == 1 ) <br>
+                        &emsp;&emsp;document.writeln("Mujer"); <br>
+                        <b>else;</b> <br>
+                        &emsp;&emsp;document.writeln("Hombre");
+                    </em>
+                </li>
+                <p class="respuesta">
+                    No debe de ir el ";" despu&eacute;s del <em>else</em>: <br>
+                    <em>
+                        <b>if</b> ( genero == 1 ) <br>
+                        &emsp;&emsp;document.writeln("Mujer"); <br>
+                        <b>else</b> <br>
+                        &emsp;&emsp;document.writeln("Hombre");
+                    </em>
+                </p>
+            </div>
+        </ol>
+    </div>
+</body>
+</html>
