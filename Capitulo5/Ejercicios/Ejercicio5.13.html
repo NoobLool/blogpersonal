@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ejercicio 5.13</title>
+        <style type="text/css">
+            .flexbox {
+                width: 600px;
+                height: 420px;
+                display: -webkit-box;
+                display: box;
+                -webkit-box-orient: vertical;
+                box-orient: vertical;
+            }
+            .flexbox > div{
+                -webkit-transition: 1s ease-out;
+                transition: 1s ease-out;
+                -webkit-border-radius: 10px;
+                border-radius: 10px;
+                border: 2px solid black;
+                width: 500px;
+                height: 220px;
+                margin: 10px 10px -30px 0px;
+                padding: 20px 20px 20px 20px;
+                box-shadow: 10px 10px 10px dimgrey;
+            }
+            .flexbox > div:nth-child(1){background-color: lightblue;}
+            .flexbox > div:nth-child(2){background-color: lightblue;}
+            .flexbox > div:nth-child(3){background-color: lightblue;}
+            .flexbox > div:nth-child(4){background-color: lightblue;}
+
+            .flexbox > div:hover {
+                width: 500px; height: 200; color: white; font-weight: bold; }
+            .flexbox > div:nth-child(1):hover{background-color: red;}
+            .flexbox > div:nth-child(2):hover{background-color: green;}
+            .flexbox > div:nth-child(3):hover{background-color: yellow;}
+            .flexbox > div:nth-child(4):hover{background-color: blue;}
+
+            p {height: 250px; overflow: hidden; font-family: "Rosario";}
+        </style>
+    </head>
+    <body>
+        <li><a href = "../../index.html" target = "_self">
+            <strong>Inicio</strong></a></li>           
+        <div class="flexbox">
+            <div><img src="GPP.png" alt="Icono de buena pr&aacute;ctica de programaci&oacute;n" width="100" height="100">
+                <p>
+                    Las buenas pr&aacute;cticas de programaci&oacute;n indican las t&eacute;cnicas que 
+                    le ayudar&aacute;n a producir programas m&aacute;s claros,
+                    comprensibles y f&aacute;ciles de mantener.
+                </p>
+            </div>
+            <div><img src="EPT.png" alt="Icono de tip para prevenir errores" width="100" height="100">
+                <p>
+                    Los tips para prevenir errores contienen suguerencias para exponer errores
+                    y eliminarlos de sus programas; muchos describen aspectos de 
+                    programaci&oacute;n que evitan que los errores entren siquiera 
+                    a los programas.
+                </p>
+            </div>
+
+            <div><img src="CPE.png" alt = "Icono de error com&uacute;n de programaci&oacute;n" width="100" height="100">
+                <p>
+                    Los errores comunes de programaci&oacute;n se&ntilde;alan los errores que comenten
+                    los estudiantes con frecuencia. Estos errores comunes de programaci&oacute;n reducen
+                    la probabilidad de que usted comenta los mismos errores.
+                </p>
+            </div>
+
+            <div><img src="SEO.png" 
+                alt = "Icono de observaci&oacute;n de ingenieri&iacute;a de software" width="100" height="100">
+                <p>
+                    Las observaciones de ingenier&iacute;a de software resaltan los asuntos de arquitectura y dise&ntilde;o
+                    que afectan en la construcci&oacute;n de sistemas de software,
+                    en especial los sistemas de gran escala.
+                </p>
+            </div>
+            
+
+        </div>
+    </body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 5.11</title>
+    <style type="text/css">
+        #estacion
+        {
+            position: relative;
+            margin: 0 auto;
+        }
+        #estacion img
+        {
+            position: absolute;
+            left: 0;
+        }
+        #estacion:hover .estaciones
+        {
+            opacity: 0;
+            -webkit-transition: opacity 3s linear;
+            transition: opacity 3s linear;
+        }
+        #estacion:hover .primavera
+        {
+            opacity: 0;
+            -webkit-transition: opacity 3s linear 3s;
+            transition: opacity 3s linear 3s;
+        }
+        #estacion:hover .verano
+        {
+            opacity: 0;
+            -webkit-transition: opacity 3s linear 6s;
+            transition: opacity 3s linear 6s;
+        }
+        #estacion:hover .otono
+        {
+            opacity: 0;
+            -webkit-transition: opacity 3s linear 9s;
+            transition: opacity 3s linear 9s;
+        }
+        #estacion:hover .invierno
+        {
+            opacity: 0;
+            -webkit-transition: opacity 3s linear 12s;
+            transition: opacity 3s linear 12s;
+        }
+    </style>
+</head>
+
+<body>
+    <li><a href = "../../index.html" target = "_self">
+        <strong>Inicio</strong></a></li>      
+    <div id="estacion">
+        <img class="correrUno" src="uno.jpg" width="291" height="189" 
+            alt="correr Uno">
+        <img class="correrDos" src="dos.jpg" width="291" height="189"
+            alt="correr Dos">
+        <img class="correrTres" src="tres.jpg" width="291" height="189"
+            alt="correr tres">
+        <img class="correrCuatro" src="cuatro.jpg" width="291" height="189"
+            alt="correr Cuatro">
+        <img class="correrCinco" src="cinco.jpg" width="291" height="189"
+            alt="correr">
+    </div>
+    
+</body>
+</html>
