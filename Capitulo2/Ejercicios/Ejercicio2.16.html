@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title>Ejercicio 2.16</title>
+   </head>
+
+   <body>
+      <li><a href = "../../index.html" target = "_self">
+         <strong>Inicio</strong></a></li>
+        <p>
+            <strong>2.16</strong> Una universidad local le pidi&oacute; que creara un documento de HTML5 que permita a los futuros estudiantes universitarios
+            proveer retroalimentaci&oacute;n sobre su visita al campus. Su documento de HTML5 debe contener un formulario
+            con campos de texto para un nombre y un corro electr&oacute;nico. Proporcione casillas de verificaci&oacute;n que permitan a los
+            futuros estudiantes indicar lo que les gust&oacute; m&aacute;s sobre el campus. Las casillas de verificaci&oacute;n deben incluir campus,
+            estudiantes, ubicaci&oacute;n, ambiente, dormitorios y deportes. Proporcione adem&aacute;s botones de opci&oacute;n que pregunten a
+            los futuros estudiantes c&oacute;mo supieron sobre la universidad. Las opciones deben incluir, amigos, televisi&oacute;n, Internet
+            y otro. Adem&aacute;s, proporcione un &aacute;rea de texto para comentarios adicionales, un bot&oacute;n para enviar y un bot&oacute;n para
+            restablecer. Use post para enviar la informaci&oacute;n en el formulario a http://www.deitel.com. 
+        </p>
+        <hr>
+      <h1>Univerisidad</h1>
+      <p>Queridos estudiantes, por favor llenen esta encuesta para mejorar la atenci&oacute;n en sus proximas visitas.</p>
+
+      <form action = "http://www.deitel.com" method = "post">
+         <p>
+            <input type = "hidden" name = "dirc"
+               value = "deitel@deitel.com">
+            <input type = "hidden" name = "sujeto"
+               value = "Univerisidad">
+            <input type = "hidden" name = "redireccion"
+               value = "main.html">
+         </p>
+
+         <p><label>Nombre:
+               <input name = "nombre" type = "text" size = "25">
+            </label></p>
+         <p><label>Direcci&oacute;n:
+               <input name = "direccion" type = "text" size = "50">
+            </label></p>
+         <p><label>Email:
+               <input name = "email" type = "text" size = "25">
+            </label></p>
+
+         <p>
+            <strong>¿Qu&eacute; es lo que m&aacute;s te gusto de la universidad?</strong><br>
+
+            <label>Estudiantes
+               <input name = "likes" type = "checkbox" value = "estudiantes">
+            </label>
+            <label>Locaci&oacute;n
+               <input name = "likes" type = "checkbox" value = "locacion">
+            </label>
+            <label>Campus
+               <input name = "likes" type = "checkbox" value = "campus">
+            </label>
+            <label>Atmosfera
+               <input name = "likes" type = "checkbox" value = "atmosfera">
+            </label>
+            <label>Dormitorios
+               <input name = "likes" type = "checkbox" value = "dormitorios">
+            </label>
+            <label>Deportes
+               <input name = "likes" type = "checkbox" value = "deportes">
+            </label>
+         </p>
+
+         <p>
+            <strong>¿Por qu&eacute; te interesaste en nuesta escuela?</strong><br>
+
+            <label>Amigos
+               <input name = "interested" type = "radio" value = "amigos" checked>
+            </label>
+            <label>Televisi&oacute;n
+               <input name = "interested" type = "radio" value = "television">
+            </label>
+            <label>Internet
+               <input name = "interested" type = "radio" value = "internet">
+            </label>
+            <label>Otros
+               <input name = "interested" type = "radio" value = "otros">
+            </label>
+         </p>
+
+         <p><label>Comentarios:<br>
+               <textarea name = "comentarios" rows = "4" cols = "36"
+                  placeholder = "Ingrese sus comentarios aqui."></textarea>
+            </label></p>
+
+         <p>
+            <input type = "submit" value = "Enviar">
+            <input type = "reset" value = "Borrar">
+         </p>
+      </form>
+   </body>
+</html>

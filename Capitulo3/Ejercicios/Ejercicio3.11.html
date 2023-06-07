@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Ejercicio 3.11</title>
+    </head>
+    
+    <body>
+        <li><a href = "../../index.html" target = "_self">
+            <strong>Inicio</strong></a></li>
+        <p><strong>3.11 <em>(Disposici&oacute;n de las p&aacute;ginas de nuestro libro en HTML5: agregar un elemento datails)</em></strong> Modifique su soluci&oacute;n
+            al ejercicio 3.10 para agregar la tabla en la figura 3.5. Use la leyenda de la figura como el elemento summary y aplique
+            formato a la tabla como un elemento table de HTML5 dentro del elemento details.
+        </p>
+        <hr>
+        
+        <section id="1">
+            <h1>3.2.1 input color</h1>
+            <p>
+                El tipo input color (figura 3.1, l&iacute;neas 20 y 21) permite al usuario introducir un color. Al momento de escribir
+                este libro, algunos navegadores despliegan el tipo input color como un campo de texto en donde el usuario
+                puede introducir un c&oacute;digo hexadecimal o el nombre de un color. Hay dos navegadores, Chrome y Opera, que
+                muestran un <em>selector de color</em> similar al cuadro de di&aacute;logo de colores de Microsoft Windows, que se muestra en
+                la figura 3.2. En el futuro, cuando haga clic en un elemento input color, es muy probable que el resto de los
+                navegadores muestren un selector de color tambi&eacute;n. 
+            </p>
+            <figure><!-- el elemnto que describe la imagen -->
+                <img src = "OperaColorInput.png" alt = "color picker control" />
+
+                <!-- el elemento figurecaption inserta una leyenda de figura -->
+                <figcaption><strong>Figura 3.2</strong> | Un di&aacute;logo para seleccionar colores.</figcaption>
+            </figure>
+        </section>
+        
+        <section id="2">
+            <em>Validaci&oacute;n</em>
+            <p>
+                Tradicionalmente ha sido dif&iacute;cil validar la entrada del usuario, como asegurar que se introduzca una direcci&oacute;n
+                de correo electr&oacute;nico, URL, fecha u hora en el formato adecuado. Los nuevos tipos input de HTML5 cuentan
+                con <em>validaci&oacute;n autom&aacute;tica</em> del lado del cliente, con lo que se elimina la necesidad de agregar c&oacute;digo complicado
+                de JavaScript a nuestras p&aacute;ginas Web para validar la entrada del usuario; as&iacute; se reduce la cantidad de datos inv&aacute;lidos
+                que se env&iacute;an y, en consecuencia, disminuye el tr&aacute;fico de Internet entre el servidor y el cliente que se usa
+                para corregir las entradas inv&aacute;lidas. <em>De todas formas el servidor debe validar toda la entrada del usuario</em>.
+                Cuando un usuario introduce datos en un formulario y luego lo env&iacute;a (en este ejemplo, al hacer clic en el
+                bot&oacute;n <Strong>Enviar</Strong>), el navegador verifica de inmediato los elementos de validaci&oacute;n autom&aacute;tica para asegurar que
+                los datos sean correctos. Por ejemplo, si un usuario introduce un valor de color hexadecimal incorrecto al usar
+                un navegador que despliegue los elementos color como un campo de texto (por ejemplo. Internet Explorer),
+                aparecer&aacute; una anotaci&oacute;n para se&ntilde;alar ese elemento e indicar que se introdujo un valor incorrecto (figura 3.4).
+                La figura 3.5 lista cada uno de los nuevos tipos Input de HTML5 y muestra ejemplos de los formatos correctos
+                requeridos para que cada tipo de datos sea v&aacute;lido.
+            </p>
+            <figure><!-- el elemnto que describe la imagen -->
+                <img src = "selfvalidationChrome.png" alt = "input validation" />
+
+                <!-- el elemento figurecaption inserta una leyenda de figura -->
+                <figcaption><strong>Figura 3.4</strong> | Validaci&oacute;n de un elemento input color. (Actualmente ya no existe esta funcionalidad en Chrome)</figcaption>
+            </figure>
+            <details>
+                <summary><strong>Figura 3.5</strong> | Tipos de input con validaci&oacute autom&aacute;tica.</summary>
+                <table border = "1">
+                   <thead>
+                      <th>Tipo de input</th>
+                      <th>Formato</th>
+                   </thead>
+                   <tr>
+                      <td>color</td>
+                      <td>C&oacute;digo hexadecimal</td>
+                   </tr>
+                   <tr>
+                      <td>date</td>
+                      <td>aaaa-mm-dd</td>
+                   </tr>
+                   <tr>
+                      <td>datetime</td>
+                      <td>aaaa-mm-dd</td>
+                   </tr>
+                   <tr>
+                      <td>datetime-local</td>
+                      <td>aaaa-mm-ddThh:mm</td>
+                   </tr>
+                   <tr>
+                      <td>month</td>
+                      <td>aaaa-mm</td>
+                   </tr>
+                   <tr>
+                      <td>number</td>
+                      <td>Cualquier valor num&eacute;rico</td>
+                   </tr>
+                   <tr>
+                      <td>email</td>
+                      <td>nombre@dominio.com</td>
+                   </tr>
+                   <tr>
+                      <td>url</td>
+                      <td>http://www.nombredominio.com</td>
+                   </tr>
+                   <tr>
+                      <td>time</td>
+                      <td>hh:mm</td>
+                   </tr>
+                   <tr>
+                      <td>week</td>
+                      <td>aaaa-Wnn</td>
+                   </tr>
+                </table>
+             </details>
+        </section>
+        <footer>
+            <!-- el elemento wbr indica el lugar apropiado en dónde separar -->
+            <!-- una palabra cuando el texto se ajuste -->
+            <h6>&copy; 1992-2012 por Deitel &amp; Associa<wbr>ates, Inc.
+            Todos los derechos reservados.</h6>
+            <!-- el elemento address representa la información de contacto para un -->
+            <!-- documento, o para el elemento body o article más cercano -->
+            <address>
+                Escriba a <a href="mailto:deitel@deitel.com">
+                    deitel@deitel.com
+                </a>
+            </address>
+        </footer>
+    </body>
+</html>

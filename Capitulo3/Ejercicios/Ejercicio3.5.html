@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Ejercicio 3.5</title>
+    </head>
+    
+    <body>
+        <li><a href = "../../index.html" target = "_self">
+            <strong>Inicio</strong></a></li>
+        <p><strong>3.5</strong> Escriba un elemento (o elementos) de HTML5 para realizar cada una de las siguientes
+            tareas: <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;a) Se pidi&oacute; a los estudiantes que clasifiquen los alimentos en la cafeter&iacute;a,
+            en una escala del 1 al 10. Use un elemento meter con texto a su izquierda y a su derecha para indicar que la calificaci&oacute;n
+            promedio fue 7 de 10.  <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;< p >1 < meter min = "1" max = "10" value = "7" >< /meter> 10 < /p></meter></p><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;b) Cree un elemento details que muestre el texto "<strong>Resultados de la encuesta</strong>"
+            en el elemento summary, deber&aacute; aparecer un p&aacute;rrafo que explique sobre la encuesta. <br>
+            &nbsp;&nbsp;&nbsp;&nbsp; < details > < summary > Resultados de la encuesta < /summary> < p > La calificaci&oacute;n que se le dio a la cafeteria
+            en la escala del 1 al 10. Fue 7. < /p > < /details > <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;c) Cree un elemento input text para el primer nombre. El elemento deber&aacute; recibir el enfoque
+            de manera autom&aacute;tica al momento de desplegar el formulario en un navegador. <br>
+            &nbsp;&nbsp;&nbsp;&nbsp; < p > < label > Nombre: < input type = "text" autofocus /> < /label > < /p > <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;d) Modifique la parte (c) de modo que se elimine el elemento label y use texto en un elemento placeholder
+            en el elemento input. <br>
+            &nbsp;&nbsp;&nbsp;&nbsp; < p > < input type = "text" placeholder = "Nombre" autofocus /> < /p > <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;e) Use un elemento datalist para proveer una lista autocomplete para cincos estados. <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;< input type = "text" id = "estado" autocomplete = "on" list = "listadeEstados" /> <br>
+            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;< datalist > <br>
+            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;< option value = "Veracruz" > <br>
+            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;< option value = "Puebla" > <br>
+            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;< option value = "Chihuahua" > <br>
+            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;< option value = "Oaxaca" > <br>
+            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;< option value = "Chiapas" > <br>
+            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;< /details > <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;f) Cree un elemento input range que permita al usuario seleccionar un n&uacute;mero del 1 al 100. <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;< label > Range: 1 < input type = "range" min = "1" max = "20" value = "10" /> 100 < /label > <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;g) Especifique que no debe permitirse el atributo autocomplete en un formulario. Muestre s&oacute;lo
+            la etiqueta de apaertura del formulario. <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;< form action = "post" autocomplete = "off" > <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;h) Use un elemento mark para resaltar el segundo enunciado del siguiente p&aacute;rrafo: <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;< p >Se pidi&oacute;
+                a los estudiantes que calificaran los alimentos en la cafeter&iacute;a. En una escala del 1 al 10. El resultado promedio fue 7.
+            < /p > <br>    
+            &nbsp;&nbsp;&nbsp;&nbsp;< p >Se pidi&oacute;
+                a los estudiantes que calificaran los alimentos en la cafeter&iacute;a.< mark > En una escala del 1 al 10. El resultado promedio fue 7.< /mark >
+            < /p > 
+        </p>
+    </body>
+</html>
