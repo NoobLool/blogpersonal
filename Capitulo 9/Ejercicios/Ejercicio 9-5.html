@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 9.5</title>
+
+    <link rel="stylesheet" href="../../css/baseStyle.css" type="text/css">
+
+</head>
+<body>
+    <li><a href = "../../index.html" target = "_self">
+        <strong>Inicio</strong></a></li>
+    <div class="contenido">
+        <h3>
+            Localice el error en cada uno de los siguientes segmentos de programa y explique cómo corregirlo:
+        </h3>
+        <ol class="boxContent" type="a">
+            <div class="oracion">
+                <li>
+                    <b>method</b> g() <br>
+                    { <br>
+                    &emsp;&emsp;document.writeln( "Dentro del método g" ); <br>
+                    }
+                </li>
+                <p class="respuesta">
+                    <em>method</em> no es la palabra que se usa para definir una función: <br>
+                    <b>function</b> g() <br>
+                    { <br>
+                    &emsp;&emsp;document.writeln( "Dentro del método g" ); <br>
+                    }
+                </p>
+            </div>
+            <div class="oracion">
+                <li>
+                    // Esta función debe devolver la suma de sus argumentos <br>
+                    <b>function</b> suma(x, y) <br>
+                    { <br>
+                    &emsp;&emsp;<b>var</b> resultado; <br>
+                    &emsp;&emsp;resultado = x + y; <br>
+                    }
+                </li>
+                <p class="respuesta">
+                    Está devolviendo la variable <em>resultado</em> sin valor: <br>
+                    <b>function</b> suma(x, y) <br>
+                    { <br>
+                    &emsp;&emsp;resultado = x + y; <br>
+                    &emsp;&emsp;<b>var</b> resultado; <br>
+                    }
+                </p>
+            </div>
+            <div class="oracion">
+                <li>
+                    <b>function</b> f( a ); <br>
+                    { <br>
+                    document.writeln( a ); <br>
+                    }
+                </li>
+                <p class="respuesta">
+                    Eliminar el punto y coma que está después del parámetro: <br>
+                    <b>function</b> f( a ) <br>
+                    { <br>
+                    document.writeln( a ); <br>
+                    }
+                </p>
+            </div>
+        </ol>
+    </div>
+</body>
+</html>

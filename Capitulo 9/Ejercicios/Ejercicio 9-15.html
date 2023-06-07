@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 9.15</title>
+
+    <link rel="stylesheet" href="../../css/baseStyle.css" type="text/css">
+
+    <script>
+        function ingresar(){
+            let numero = 0;
+            let resultado = document.getElementById("resultado");
+
+            while(numero != -1){
+                numero = window.prompt("Ingrese un número\nNota: -1 para salir.", "0");
+
+                numero = parseInt(numero);
+
+                if(Number.isInteger(numero)){
+                    if(numero <= -1)
+                        break;
+                    else
+                        (esPar(numero)) ?
+                            resultado.innerHTML += "<p>" + numero + " es par.</p>" :
+                            resultado.innerHTML += "<p>" + numero + " no es par.</p>";
+                }
+            }
+        }
+
+        function esPar(num){
+            return num % 2 == 0;
+        }
+
+        /* function validar(cadena){
+            let reg = /[0-9]/;
+            return reg.test(cadena);
+        } */
+
+        window.addEventListener("load", ingresar, false);
+    </script>
+
+</head>
+<body>
+    <li><a href = "../../index.html" target = "_self">
+        <strong>Inicio</strong></a></li>
+    <div class="contenido">
+        <h3>
+            Escriba una secuencia de comandos que reciba enteros (uno a la vez) y los pase a la función <em>esPar</em>, que utiliza el operador módulo para determinar si un entero es par. La función debe recibir un argumento entero y devolver <em>true</em> si el entero es <em>par</em>, y <em>false</em> en caso contrario. Uso los ciclos controlados por centinela y un diálogo <em>promt</em>.
+        </h3>
+        <div class="boxContent">
+            <p id="resultado"></p>
+        </div>
+    </div>
+</body>
+</html>

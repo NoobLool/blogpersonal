@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 9.30</title>
+
+    <link rel="stylesheet" href="../../css/baseStyle.css" type="text/css">
+
+</head>
+<body>
+    <li><a href = "../../index.html" target = "_self">
+        <strong>Inicio</strong></a></li>
+    <div class="contenido">
+        <h3>
+            ¿Qué hace la siguiente función?
+        </h3>
+        <div class="boxContent">
+            // El parámetro b debe ser entero <br>
+            // positivo para evitar recursividad infinita <br>
+            <b>function</b> misterio( a, b ) <br>
+            { <br>
+            &emsp;<b>if</b> ( b == 1 ) <br>
+            &emsp;&emsp;<b>return</b> a; <br>
+            &emsp;<b>else</b> <br>
+            &emsp;&emsp;<b>return</b> a + misterio(a, b - 1); <br>
+            } <br><br>
+
+            <p>
+                Regresa lo siguiente: <em> a * b </em> <br>
+                La suma de a un total de b cantidad de veces.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

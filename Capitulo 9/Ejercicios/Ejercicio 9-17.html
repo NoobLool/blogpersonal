@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 9.17</title>
+
+    <link rel="stylesheet" href="../../css/baseStyle.css" type="text/css">
+
+    <style type="text/css">
+        input[type=number] { width: 60px; }
+    </style>
+
+    <script>
+        function inicar(){
+            let botonC = document.getElementById("calcularC");
+            let botonF = document.getElementById("calcularF");
+            let campoC = document.getElementById("campoC");
+            let campoF = document.getElementById("campoF");
+            let resultado = document.getElementById("resultado");
+
+            botonC.addEventListener("click", mostrarC, false);
+            botonF.addEventListener("click", mostrarF, false);
+        }
+
+        function mostrarC(){
+            let fahrenheit = parseFloat(campoF.value);
+
+            resultado.innerHTML = "ºCelsius &rArr; " + Celsius(fahrenheit).toFixed(4);
+
+        }
+        function mostrarF(){
+            let celsius = parseFloat(campoC.value);
+
+            resultado.innerHTML = "ºFahrenheit &rArr; " + Fahrenheit(celsius).toFixed(4);
+
+        }
+
+        function Celsius(F){
+            return (5.0 / 9.0) * (F - 32);
+        }
+
+        function Fahrenheit(C){
+            return (9.0 / 5.0) * (C + 32);
+        }
+
+        window.addEventListener("load", inicar, false);
+    </script>
+
+</head>
+<body>
+    <li><a href = "../../index.html" target = "_self">
+        <strong>Inicio</strong></a></li>
+    <div class="contenido">
+        <h3>
+            Implemente las siguientes funciones:
+        </h3>
+        <ol class="boxContent" type="a">
+            <div class="oracion">
+                <li>
+                    La función <b>Celsius</b> devuelve el equivalente en <em>Celsius</em> de una temperatura en <em>Fahrenheit</em>, mediante el cálculo: <br>
+                    <em>C = 5.0 / 9.0 * ( F - 32 )</em>;
+                </li>
+                <p class="respuesta">
+                    <b>function</b> Celsius(F){ <br>
+                    &emsp;return (5.0 / 9.0) * (F - 32); <br>
+                    }
+                </p>
+            </div>
+            <div class="oracion">
+                <li>
+                    La función <b>Fahrenheit</b> devuelve el equivalente en <em>Fahrenheit</em> de una temperatura en <em>Celsius</em>, mediante el cálculo: <br>
+                    <em>F = 9.0 / 5.0 * C + 32</em>;
+                </li>
+                <p class="respuesta">
+                    <b>function</b> Fahrenheit(C){ <br>
+                    &emsp;return (9.0 / 5.0) * (C + 32); <br>
+                    }
+                </p>
+            </div>
+            <div class="oracion">
+                <li>
+                    Use esta funciones para escribir una secuencia de comandos que permita al usuario introducir una temperatura en Fahrenheit o Celsius y muestre el equivalente en Celsius o Fahrenheit.
+                    <form action="#">
+                        <label for="Fahrenheit">Fahrenheit</label>
+                        <input type="number" name="Fahrenheit" id="campoF">
+                        <input type="button" value="Convertir a Celsius" id="calcularC">
+
+                        <label for="Celsius">Celsius</label>
+                        <input type="number" name="Celsius" id="campoC">
+                        <input type="button" value="Convertir a Fahrenheit" id="calcularF">
+                        
+                    </form>
+                </li>
+                <p class="respuesta" id="resultado">
+                </p>
+            </div>
+        </ol>
+    </div>
+</body>
+</html>
